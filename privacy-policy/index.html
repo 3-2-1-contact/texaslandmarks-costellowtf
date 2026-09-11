@@ -1,523 +1,352 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>TexasLandmarks, Texas Historical Markers Map</title>
-  <meta name="description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline. Free on the App Store. No ads, no tracking.">
-  <link rel="canonical" href="https://texaslandmarks.costello.wtf/">
-  <meta name="apple-itunes-app" content="app-id=6755979204">
-  <meta property="og:title" content="TexasLandmarks, Texas Historical Markers Map">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://texaslandmarks.costello.wtf/">
-  <meta property="og:description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline.">
-  <meta property="og:site_name" content="TexasLandmarks">
-  <meta property="og:image" content="https://texaslandmarks.costello.wtf/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="TexasLandmarks, over 13,000 Texas historical markers, full text, offline">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TexasLandmarks, Texas Historical Markers Map">
-  <meta name="twitter:description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline.">
-  <meta name="twitter:image" content="https://texaslandmarks.costello.wtf/og-image.png">
-  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2FlYjhjMCIvPgogIDxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgcng9IjMuNSIgZmlsbD0iIzFmNGU3OSIvPgogIDxyZWN0IHg9IjkiIHk9IjEwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZjhmNmYwIiBmaWxsLW9wYWNpdHk9IjAuNTUiLz4KICA8cmVjdCB4PSIxMSIgeT0iMTUuNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiNmOGY2ZjAiIGZpbGwtb3BhY2l0eT0iMC41NSIvPgogIDxyZWN0IHg9IjkiIHk9IjIwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZjhmNmYwIiBmaWxsLW9wYWNpdHk9IjAuNTUiLz4KPC9zdmc+Cg==">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'none'; connect-src 'none'; font-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
-  <style>
-    :root {
-      --bg: #f5f6f7;
-      --surface: #ffffff;
-      --hairline: #dde3e8;
-      --accent: #1f4e79;
-      --ink: #1c232b;
-      --ink-muted: #5b6672;
-      --divider-motif: #aeb8c0;
-      --check: var(--ink-muted);
-      --focus-ring: var(--accent);
-      --badge-surface: #ffffff;
-      --plaque-border: #aeb8c0;
-      --plaque-top: #2a5d8f;
-      --plaque-bottom: #1f4e79;
-      --plaque-engraving: rgba(248, 246, 240, 0.55);
-      --plaque-star: #e8e6e1;
-      --space-xs: 4px;
-      --space-sm: 8px;
-      --space-md: 16px;
-      --space-lg: 24px;
-      --space-xl: 32px;
-      --space-2xl: 48px;
-      --space-3xl: 64px;
-      --space-4xl: 96px;
-      --font-display: Georgia, "Times New Roman", Times, serif;
-      --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
-      color-scheme: light dark;
-    }
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "surface-bright": "#f7f9ff", "on-tertiary-fixed-variant": "#005049", "surface-canvas": "#F4EFEA", "surface-container-highest": "#dce3ee", "on-surface": "#151c24", "tertiary-container": "#00413b", "success-pine": "#15803D", "inverse-on-surface": "#eaf1fc", "inverse-surface": "#2a3139", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb77d", "on-tertiary-fixed": "#00201d", "primary-fixed-dim": "#aac9f1", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-background": "#151c24", "on-primary-container": "#87a5cc", "on-primary-fixed-variant": "#29496a", "tertiary-fixed": "#89f5e7", "outline-variant": "#c3c6cf", "on-secondary-container": "#663500", "inverse-primary": "#aac9f1", "secondary-container": "#fe932c", "outline": "#73777f", "sunburst-gold": "#F59E0B", "on-error": "#ffffff", "primary-container": "#1a3b5c", "primary": "#002544", "on-primary": "#ffffff", "surface-variant": "#dce3ee", "on-secondary-fixed": "#2f1500", "tertiary-fixed-dim": "#6bd8cb", "primary-fixed": "#d1e4ff", "surface-container-low": "#eef4ff", "on-tertiary-container": "#42b4a7", "on-secondary": "#ffffff", "secondary": "#904d00", "surface-container": "#e8eefa", "on-primary-fixed": "#001d36", "tertiary": "#002925", "on-surface-variant": "#43474e", "background": "#f7f9ff", "surface-limestone": "#FAF8F5", "on-secondary-fixed-variant": "#6e3900", "star-accent": "#E0A93B", "surface-tint": "#426083", "surface-dim": "#d4dae5", "surface-container-lowest": "#ffffff", "surface": "#f7f9ff", "secondary-fixed": "#ffdcc3", "marker-bronze": "#78350F", "surface-container-high": "#e2e9f4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "space-lg": "1.5rem", "gutter": "1.25rem" }, "fontFamily": { "display-lg-mobile": [ "\"Source Serif 4\"" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "\"Source Serif 4\"" ], "display-lg": [ "\"Source Serif 4\"" ], "label-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "headline-lg": [ "\"Source Serif 4\"" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-lg-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "display-lg": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "17px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-canvas text-on-surface font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-limestone/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-max"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="TexasLandmarks App Icon" class="h-9 w-9 rounded-lg object-contain shadow-sm" src="images/app-icon.png"><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none group-hover:text-primary-container transition-colors">TexasLandmarks</span><span class="material-symbols-outlined text-star-accent text-[16px] leading-none select-none">star</span></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 mt-0.5">Texas Historical Markers Map</span></div></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#why-its-different">Why It's Different</a><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#free">100% Free</a><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#privacy">Privacy Guarantee</a><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#download">Download App</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_2px_4px_rgba(26,35,43,0.08)] hover:bg-primary-container hover:text-on-primary transition-all duration-200" data-path="home" href="#download"><span class="material-symbols-outlined text-[20px]">download</span><span class="">Download on App Store</span></a></div></div></header><main class="w-full pt-20 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden pt-space-xl pb-space-xl md:pb-28 bg-surface-canvas">
+<!-- Ambient Lone Star Decorative Watermark -->
+<div class="absolute -right-16 -top-16 w-96 h-96 rounded-full bg-sunburst-gold/5 blur-3xl pointer-events-none"></div>
+<div class="absolute left-10 top-1/2 w-80 h-80 rounded-full bg-primary/5 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-gutter relative z-10">
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-limestone shadow-sm mb-space-lg"><span class="material-symbols-outlined text-star-accent text-[16px] select-none">explore</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Every road has a story. Discover it. No signal required.</span></div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-primary tracking-tight mb-space-md max-w-4xl text-center">
+            You've always wondered what those signs say.
+          </h1>
+<div class="flex items-center justify-center gap-space-sm mb-space-sm"><span class="material-symbols-outlined text-star-accent text-[18px] select-none">star</span><span class="font-headline-md text-headline-md text-marker-bronze tracking-tight">TexasLandmarks</span><span class="material-symbols-outlined text-star-accent text-[18px] select-none">star</span></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl max-w-2xl leading-relaxed text-center">
+            Over 13,000 official Texas Historical Commission markers. Full text, offline. Designed specifically for road-trippers, backroad travelers, and anyone curious about the Lone Star State.
+          </p>
+<div class="flex flex-col items-center justify-center gap-space-sm w-full mb-space-lg"><a class="group relative inline-flex items-center gap-space-md px-space-lg py-3.5 rounded-xl bg-primary text-on-primary shadow-md hover:bg-primary-container transition-all duration-200 transform hover:-translate-y-0.5" href="https://apps.apple.com/us/app/texaslandmarks/id6755979204" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="w-7 h-7 fill-current" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.3-6.19-9.35-11.08-20.15-14.67-32.39-3.58-12.24-5.38-23.77-5.38-34.58 0-16.14 4.12-29.47 12.35-40 8.23-10.53 18.52-15.89 30.86-16.08 6.36 0 13.06 1.83 20.12 5.51 7.05 3.67 11.64 5.56 13.75 5.67 1.85-.11 6.55-2.07 14.11-5.89 7.55-3.82 14.17-5.6 19.86-5.35 15.09.98 26.68 6.64 34.78 16.99-13.15 7.94-19.61 18.93-19.38 32.96.22 10.99 4.3 20.07 12.24 27.24 3.91 3.58 8.48 6.3 13.71 8.16-2.83 8.26-6.19 16.18-10.09 23.76zM119.22 33.02c0-7.72 2.72-15.01 8.15-21.87 5.44-6.86 12.18-10.88 20.24-12.06.33 1.09.49 2.18.49 3.27 0 7.83-2.94 15.34-8.81 22.52-5.87 7.18-12.73 11.21-20.57 12.08-.22-1.3-.5-2.61-.5-3.94z"></path></svg><div class="flex flex-col text-left leading-none"><span class="font-label-sm text-[11px] text-surface-container-highest tracking-wide uppercase font-medium">Download on the</span><span class="font-title-md text-title-md font-bold tracking-tight text-on-primary mt-0.5">Apple App Store</span></div></a><div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-limestone shadow-sm"><span class="material-symbols-outlined text-success-pine text-[18px]">cloud_off</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Free on the App Store • <strong class="text-primary font-semibold">No ads, no tracking</strong></span></div></div>
+<div class="grid grid-cols-3 gap-space-xl pt-space-md w-full max-w-xl justify-center text-center">
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">13,000+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Plaques Cataloged</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">254</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Texas Counties</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">0 MB</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cell Data Needed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURES SECTION: WHY YOU'LL WANT IT -->
+<section class="w-full py-space-xl md:py-24 bg-surface-limestone relative" id="why-its-different">
+<div class="max-w-7xl mx-auto px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-space-xl max-w-2xl mx-auto">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-canvas text-marker-bronze font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-space-xs">
+          Built for Texas Highways &amp; Backroads
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Why you'll want it
+        </h2>
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #16181d;
-        --surface: #1e2229;
-        --hairline: #333a44;
-        --accent: #7fa8cc;
-        --ink: #e8e6e1;
-        --ink-muted: #a7b0ba;
-        --divider-motif: #3a434d;
-        --plaque-border: #5c6670;
-        --plaque-top: #4d7ba6;
-        --plaque-bottom: #33597e;
-      }
-    }
+</div>
+<!-- 3 Feature Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Works anywhere, even with no signal -->
+<div class="flex flex-col justify-between bg-surface-canvas rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<!-- Visual Graphic: Reception Gauge & Offline Database Icon -->
+<div class="w-full h-44 rounded-xl bg-surface-limestone p-space-md mb-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-marker-bronze/10 text-marker-bronze font-label-sm text-[11px] font-bold uppercase">
+                  Zero Bars? No Problem
+                </span>
+<span class="material-symbols-outlined text-primary text-[22px]">database</span>
+</div>
+<!-- Backroad Reception Gauge Graphic -->
+<div class="flex items-end justify-center gap-2 py-4">
+<div class="w-3 h-4 rounded-sm bg-outline/20"></div>
+<div class="w-3 h-7 rounded-sm bg-outline/20"></div>
+<div class="w-3 h-11 rounded-sm bg-outline/20"></div>
+<div class="w-3 h-16 rounded-sm bg-outline/20"></div>
+<div class="ml-3 flex flex-col items-start justify-center">
+<span class="font-label-sm text-label-sm font-bold text-error">NO CELL SERVICE</span>
+<span class="font-label-sm text-[11px] text-success-pine font-semibold">100% DB ACCESSIBLE</span>
+</div>
+</div>
+<!-- Offline Confirmation Tag -->
+<div class="flex items-center justify-between text-[12px] text-on-surface-variant">
+<span class="">Instant local search</span>
+<span class="font-bold text-primary">0.02ms query</span>
+</div>
+</div>
+<!-- Card Headline & Copy -->
+<h3 class="font-headline-md text-headline-md text-primary mb-space-xs">
+              Works anywhere, even with no signal
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Everything runs off a database built into the app. No signal required, no loading spinner on a backroad with no bars.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1.5 text-marker-bronze font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">Preloaded with 13,000+ official markers</span>
+</div>
+</div>
+<!-- Card 2: See what's coming up before you pass it -->
+<div class="flex flex-col justify-between bg-surface-canvas rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<!-- Visual Graphic: Compass Radar & Distance HUD -->
+<div class="w-full h-44 rounded-xl bg-surface-limestone p-space-md mb-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-sunburst-gold/20 text-secondary font-label-sm text-[11px] font-bold uppercase">
+                  Directional Filter
+                </span>
+<span class="material-symbols-outlined text-sunburst-gold text-[22px]">radar</span>
+</div>
+<!-- Directional Compass Graphic -->
+<div class="flex items-center justify-center gap-4 py-2">
+<div class="relative w-20 h-20 rounded-full bg-primary/5 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[28px] animate-pulse">navigation</span>
+</div>
+<!-- North Marker -->
+<span class="absolute top-1 text-[10px] font-bold text-primary">N</span>
+</div>
+<div class="flex flex-col">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[11px] font-bold w-max mb-1">Ahead of you</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">1.2 mi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Bearing 280° West</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[12px] text-on-surface-variant">
+<span class="">Filter: Only forward route</span>
+<span class="font-bold text-primary">Active</span>
+</div>
+</div>
+<!-- Card Headline & Copy -->
+<h3 class="font-headline-md text-headline-md text-primary mb-space-xs">
+              See what's coming up before you pass it
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              The app shows your distance and direction to nearby markers, with an "ahead of you" filter so you can see what's coming up before you get there.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">route</span>
+<span class="">No more missing historical stops at 70 mph</span>
+</div>
+</div>
+<!-- Card 3: Apple Maps gets you there -->
+<div class="flex flex-col justify-between bg-surface-canvas rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<!-- Visual Graphic: Seamless Navigation Handoff -->
+<div class="w-full h-44 rounded-xl bg-surface-limestone p-space-md mb-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed text-primary font-label-sm text-[11px] font-bold uppercase">
+                  Turn-by-Turn Ready
+                </span>
+<span class="material-symbols-outlined text-primary text-[22px]">map</span>
+</div>
+<!-- Apple Maps Turn Preview Component -->
+<div class="bg-primary rounded-xl p-3 text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-bright/10 flex items-center justify-center text-sunburst-gold">
+<span class="material-symbols-outlined text-[24px]">turn_right</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[12px] text-surface-container-highest uppercase font-bold tracking-wider">In 500 feet</span>
+<span class="font-title-md text-title-md font-bold leading-tight">Turn right to Marker</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-sunburst-gold text-primary font-bold text-[11px]">1 Tap</span>
+</div>
+<div class="flex items-center justify-between text-[12px] text-on-surface-variant">
+<span class="">Direct Apple Maps deep link</span>
+<span class="font-bold text-success-pine">Native GPS</span>
+</div>
+</div>
+<!-- Card Headline & Copy -->
+<h3 class="font-headline-md text-headline-md text-primary mb-space-xs">
+              Apple Maps gets you there
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Tap through to Apple Maps for turn-by-turn directions when you do want to stop.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="">Seamless hand-off directly to native GPS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 100% FREE, NO CATCH SECTION -->
+<section class="w-full py-space-xl md:py-24 bg-surface-canvas relative" id="free">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="bg-surface-limestone rounded-3xl p-space-lg md:p-space-xl shadow-lg relative overflow-hidden">
+<!-- Sunlit background highlight -->
+<div class="absolute -left-10 -bottom-10 w-72 h-72 bg-sunburst-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl mx-auto text-center mb-space-xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-success-pine/10 text-success-pine font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-sm">
+            Ethical Software Guarantee
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-sm">
+            100% Free, No Catch
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            TexasLandmarks is free. Not a free trial, not a freemium tier with a paywall behind it. Just free.
+          </p>
+</div>
+<!-- 5 High-Impact Checkmark Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-xl">
+<div class="flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-canvas shadow-sm">
+<div class="w-12 h-12 rounded-full bg-success-pine/10 text-success-pine flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">block</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">No ads</span>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">Zero clutter or banners</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-canvas shadow-sm">
+<div class="w-12 h-12 rounded-full bg-success-pine/10 text-success-pine flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">credit_card_off</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">No in-app purchases</span>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">Every county unlocked</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-canvas shadow-sm">
+<div class="w-12 h-12 rounded-full bg-success-pine/10 text-success-pine flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">event_busy</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">No subscriptions</span>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">No monthly renewals</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-canvas shadow-sm">
+<div class="w-12 h-12 rounded-full bg-success-pine/10 text-success-pine flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">no_accounts</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">No accounts</span>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">No email or password</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-canvas shadow-sm">
+<div class="w-12 h-12 rounded-full bg-success-pine/10 text-success-pine flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">No tracking</span>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">Total on-device privacy</span>
+</div>
+</div>
+<!-- Punchline Banner -->
+<div class="text-center pt-space-md">
+<div class="inline-block px-space-lg py-3 rounded-2xl bg-primary text-on-primary shadow-sm font-headline-md text-headline-md tracking-wide">
+            You download it, it works, that's it.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRIVACY POLICY SECTION -->
+<section class="w-full py-space-xl md:py-24 bg-surface-limestone relative" id="privacy">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="max-w-3xl mx-auto text-center mb-space-xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-xs">
+          Privacy Policy
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-sm">
+          Privacy Manifesto
+        </h2>
+<p class="font-headline-md text-headline-md text-primary font-medium max-w-2xl mx-auto">
+          TexasLandmarks collects no data. It's fully offline. Nothing you do in the app is sent anywhere.
+        </p>
+</div>
+<!-- 4-Pillar Privacy Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg max-w-4xl mx-auto">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-canvas flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">pin_drop</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">
+              Location stays on your phone
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              If you allow location access, your position is used on the device to find nearby markers. It's never uploaded.
+            </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-canvas flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">share_location</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">
+              No third parties receive any data
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Because none is collected. We don't have telemetry SDKs, ad networks, or third-party trackers inside the app.
+            </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-canvas flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">delete_forever</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">
+              Nothing is retained
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              So there's nothing to delete and no account to cancel. Your travel history is solely your own.
+            </p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-canvas flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">
+              No accounts, no sign-in, no tracking
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              The app just works. No analytics, no ads. This website doesn't track you either.
+            </p>
+</div>
+</div>
+</div>
+<!-- Developer Story & Mission Quote Box -->
 
-    html {
-      scroll-behavior: smooth;
-    }
+</div>
+</section>
+<!-- BOTTOM DOWNLOAD BANNER -->
+<section class="w-full py-space-xl md:py-20 bg-primary text-on-primary relative overflow-hidden" id="download">
+<!-- Starburst Accent Decoration -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-sunburst-gold/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-gutter relative z-10 text-center flex flex-col items-center">
+<div class="w-20 h-20 rounded-2xl bg-surface-limestone p-1.5 shadow-xl mb-space-md flex items-center justify-center"><img alt="TexasLandmarks App Icon" class="w-full h-full rounded-xl object-contain" src="images/app-icon.png"></div>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright tracking-tight mb-space-sm max-w-xl">
+        Stop wondering what those signs say.
+      </h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-xl mb-space-lg leading-relaxed">
+        Download TexasLandmarks today for your next Hill Country drive, Big Bend expedition, or cross-state voyage.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<a class="inline-flex items-center gap-space-md px-space-lg py-4 rounded-xl bg-sunburst-gold text-primary shadow-lg hover:bg-star-accent transition-all duration-200 transform hover:-translate-y-0.5" href="https://apps.apple.com/us/app/texaslandmarks/id6755979204" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-7 h-7 fill-current" viewBox="0 0 170 170">
+<path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.3-6.19-9.35-11.08-20.15-14.67-32.39-3.58-12.24-5.38-23.77-5.38-34.58 0-16.14 4.12-29.47 12.35-40 8.23-10.53 18.52-15.89 30.86-16.08 6.36 0 13.06 1.83 20.12 5.51 7.05 3.67 11.64 5.56 13.75 5.67 1.85-.11 6.55-2.07 14.11-5.89 7.55-3.82 14.17-5.6 19.86-5.35 15.09.98 26.68 6.64 34.78 16.99-13.15 7.94-19.61 18.93-19.38 32.96.22 10.99 4.3 20.07 12.24 27.24 3.91 3.58 8.48 6.3 13.71 8.16-2.83 8.26-6.19 16.18-10.09 23.76zM119.22 33.02c0-7.72 2.72-15.01 8.15-21.87 5.44-6.86 12.18-10.88 20.24-12.06.33 1.09.49 2.18.49 3.27 0 7.83-2.94 15.34-8.81 22.52-5.87 7.18-12.73 11.21-20.57 12.08-.22-1.3-.5-2.61-.5-3.94z"></path>
+</svg>
+<div class="flex flex-col text-left leading-none">
+<span class="font-label-sm text-[11px] text-primary/80 uppercase font-semibold">Get it on the</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-primary mt-0.5">Apple App Store</span>
+</div>
+</a>
+</div>
+<p class="font-label-sm text-[12px] text-surface-container-highest/70 mt-space-md">
+        Requires iOS 16.0 or later. Compatible with iPhone.
+      </p>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-limestone shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-xl"><div class="max-w-7xl mx-auto px-gutter"><div class="flex flex-col md:flex-row md:items-start justify-between gap-space-xl pb-space-lg"><div class="max-w-md"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="TexasLandmarks App Icon" class="h-8 w-8 rounded-lg object-contain opacity-90 shadow-sm" src="images/app-icon.png"><span class="font-headline-md text-headline-md text-primary">TexasLandmarks</span></div><p class="font-label-sm text-label-sm text-outline">Comprehensive spatial catalog of 13,000+ official Texas Historical Commission markers across all 254 counties.</p></div><div class="flex flex-col sm:flex-row gap-space-xl text-left"><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-primary">THC Public Data Source</h4><ul class="space-y-space-xs font-label-lg text-label-lg text-on-surface-variant"><li class=""></li><li class=""></li><li class=""></li></ul></div></div></div><div class="pt-space-lg space-y-space-xs"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline"><div class="">© 2026 Jason Costello. All rights reserved.</div><div class="flex items-center gap-space-sm"><span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-success-pine text-[16px]">verified_user</span>Zero tracking, analytics, or telemetry</span></div></div><p class="font-label-sm text-label-sm text-outline/80 leading-relaxed">Apple, the Apple logo, iPhone, and Apple Maps are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Marker inscriptions, names, and coordinates curated from official Texas Historical Commission public records.</p></div></div></footer>
 
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .column {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    @media (min-width: 720px) {
-      .column {
-        padding-left: 24px;
-        padding-right: 24px;
-      }
-    }
-
-    @media (min-width: 1080px) {
-      .column {
-        padding-left: 32px;
-        padding-right: 32px;
-      }
-    }
-
-    .hero {
-      padding-top: var(--space-3xl);
-      padding-bottom: var(--space-3xl);
-    }
-
-    .hook {
-      margin: 0 0 var(--space-md);
-      font-family: var(--font-display);
-      font-size: clamp(32px, 5vw, 48px);
-      font-weight: 700;
-      line-height: 1.15;
-      color: var(--ink);
-    }
-
-    h1 {
-      margin: 0 0 var(--space-md);
-      font-family: var(--font-display);
-      font-size: clamp(20px, 3vw, 34px);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--ink);
-    }
-
-    .tagline {
-      font-weight: 400;
-      color: var(--accent);
-    }
-
-    .stat {
-      margin: 0 0 var(--space-xl);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.55;
-      color: var(--ink);
-    }
-
-    .badge-card {
-      display: block;
-      background: var(--badge-surface);
-      border: 1px solid var(--hairline);
-      border-radius: 8px;
-      padding: 12px 16px;
-    }
-
-    .badge-card a {
-      display: block;
-      line-height: 0;
-    }
-
-    .badge-card img {
-      display: block;
-    }
-
-    .badge-card:has(a:hover) {
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    .cta {
-      margin: var(--space-md) 0 0;
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--ink-muted);
-    }
-
-    .plaque {
-      display: block;
-      width: 100%;
-      max-width: min(330px, 55vw);
-      height: auto;
-      margin: var(--space-2xl) auto 0;
-    }
-
-    .plaque-slot {
-      justify-self: center;
-    }
-
-    @media (min-width: 900px) {
-      .hero {
-        display: grid;
-        grid-template-columns: 1.05fr 0.95fr;
-        gap: 48px;
-        align-items: center;
-      }
-
-      .badge-card {
-        display: inline-block;
-      }
-
-      .plaque {
-        margin-top: 0;
-      }
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: color-mix(in srgb, var(--accent), black 12%);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      a:hover {
-        color: color-mix(in srgb, var(--accent), white 8%);
-      }
-    }
-
-    a:focus-visible {
-      outline: 2px solid var(--focus-ring);
-      outline-offset: 2px;
-    }
-
-    /* Badge CTA focus ring sits on the intentionally-white badge card in both
-       schemes; the dark-scheme accent (#7fa8cc) fails WCAG 2.2 AA 3:1 there.
-       Constant dark-blue ring keeps 8.66:1 on white regardless of scheme
-       (code review WR-01). */
-    .badge-card a:focus-visible {
-      outline-color: #1f4e79;
-    }
-
-    section {
-      padding-top: var(--space-3xl);
-      padding-bottom: var(--space-3xl);
-    }
-
-    @media (min-width: 1080px) {
-      section {
-        padding-top: var(--space-4xl);
-        padding-bottom: var(--space-4xl);
-      }
-    }
-
-    h2 {
-      margin: 0 0 var(--space-lg);
-      font-family: var(--font-display);
-      font-size: clamp(20px, 3vw, 34px);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--ink);
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: var(--space-lg);
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .feature-grid li {
-      background: var(--surface);
-      border: 1px solid var(--hairline);
-      border-radius: 8px;
-      padding: var(--space-lg);
-    }
-
-    .feature-grid svg {
-      display: block;
-      width: 24px;
-      height: 24px;
-    }
-
-    h3 {
-      margin: var(--space-md) 0 var(--space-sm);
-      font-family: var(--font-display);
-      font-size: clamp(20px, 3vw, 34px);
-      font-weight: 700;
-      line-height: 1.3;
-      color: var(--ink);
-    }
-
-    .feature-grid p {
-      margin: 0;
-    }
-
-    .free-column {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .free-column p {
-      margin: 0 0 var(--space-md);
-    }
-
-    .checklist {
-      margin: var(--space-xl) 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .checklist li {
-      display: flex;
-      align-items: center;
-      gap: var(--space-xs);
-    }
-
-    .checklist li + li {
-      margin-top: var(--space-xl);
-    }
-
-    .check-icon {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-    }
-
-    .free-column p.closer {
-      margin: 0;
-    }
-
-    .privacy-column {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .privacy-column p {
-      margin: 0;
-    }
-
-    .privacy-column p + p {
-      margin-top: var(--space-md);
-    }
-
-    .divider {
-      display: block;
-      width: 100%;
-      height: 12px;
-      margin: 0;
-    }
-
-    footer {
-      padding-top: var(--space-2xl);
-      padding-bottom: var(--space-3xl);
-    }
-
-    .footer-line {
-      margin: 0 0 var(--space-sm);
-      font-size: 13px;
-      line-height: 1.4;
-      color: var(--ink-muted);
-    }
-  </style>
-</head>
-<body>
-  <header class="hero column">
-    <div class="hero-text">
-      <p class="hook">You've always wondered what those signs say.</p>
-      <h1>TexasLandmarks<span class="tagline">, Texas Historical Markers Map</span></h1>
-      <p class="stat">Over 13,000 official Texas Historical Commission markers. Full text, offline.</p>
-      <div class="badge-card">
-        <!-- App Store badge: embedded unmodified from https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg (10804 bytes, fetched 2026-09-05) -->
-        <a href="https://apps.apple.com/us/app/texaslandmarks/id6755979204">
-          <img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibGl2ZXR5cGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjExOS42NjQwNyIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDExOS42NjQwNyA0MCI+CiAgPHRpdGxlPkRvd25sb2FkX29uX3RoZV9BcHBfU3RvcmVfQmFkZ2VfVVMtVUtfUkdCX2Jsa180U1ZHXzA5MjkxNzwvdGl0bGU+CiAgPGc+CiAgICA8Zz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTExMC4xMzQ3NywwSDkuNTM0NjhjLS4zNjY3LDAtLjcyOSwwLTEuMDk0NzMuMDAyLS4zMDYxNS4wMDItLjYwOTg2LjAwNzgxLS45MTg5NS4wMTI3QTEzLjIxNDc2LDEzLjIxNDc2LDAsMCwwLDUuNTE3MS4xOTE0MWE2LjY2NTA5LDYuNjY1MDksMCwwLDAtMS45MDA4OC42MjdBNi40Mzc3OSw2LjQzNzc5LDAsMCwwLDEuOTk3NTcsMS45OTcwNyw2LjI1ODQ0LDYuMjU4NDQsMCwwLDAsLjgxOTM1LDMuNjE4MTZhNi42MDExOSw2LjYwMTE5LDAsMCwwLS42MjUsMS45MDMzMiwxMi45OTMsMTIuOTkzLDAsMCwwLS4xNzkyLDIuMDAyQy4wMDU4Nyw3LjgzMDA4LjAwNDg5LDguMTM3NywwLDguNDQ0MzRWMzEuNTU4NmMuMDA0ODkuMzEwNS4wMDU4Ny42MTEzLjAxNTE1LjkyMTlhMTIuOTkyMzIsMTIuOTkyMzIsMCwwLDAsLjE3OTIsMi4wMDE5LDYuNTg3NTYsNi41ODc1NiwwLDAsMCwuNjI1LDEuOTA0M0E2LjIwNzc4LDYuMjA3NzgsMCwwLDAsMS45OTc1NywzOC4wMDFhNi4yNzQ0NSw2LjI3NDQ1LDAsMCwwLDEuNjE4NjUsMS4xNzg3LDYuNzAwODIsNi43MDA4MiwwLDAsMCwxLjkwMDg4LjYzMDgsMTMuNDU1MTQsMTMuNDU1MTQsMCwwLDAsMi4wMDM5LjE3NjhjLjMwOTA5LjAwNjguNjEyOC4wMTA3LjkxODk1LjAxMDdDOC44MDU2Nyw0MCw5LjE2OCw0MCw5LjUzNDY4LDQwSDExMC4xMzQ3N2MuMzU5NCwwLC43MjQ2LDAsMS4wODQtLjAwMi4zMDQ3LDAsLjYxNzItLjAwMzkuOTIxOS0uMDEwN2ExMy4yNzksMTMuMjc5LDAsMCwwLDItLjE3NjgsNi44MDQzMiw2LjgwNDMyLDAsMCwwLDEuOTA4Mi0uNjMwOCw2LjI3NzQyLDYuMjc3NDIsMCwwLDAsMS42MTcyLTEuMTc4Nyw2LjM5NDgyLDYuMzk0ODIsMCwwLDAsMS4xODE2LTEuNjE0Myw2LjYwNDEzLDYuNjA0MTMsMCwwLDAsLjYxOTEtMS45MDQzLDEzLjUwNjQzLDEzLjUwNjQzLDAsMCwwLC4xODU2LTIuMDAxOWMuMDAzOS0uMzEwNi4wMDM5LS42MTE0LjAwMzktLjkyMTkuMDA3OC0uMzYzMy4wMDc4LS43MjQ2LjAwNzgtMS4wOTM4VjkuNTM2MTNjMC0uMzY2MjEsMC0uNzI5NDktLjAwNzgtMS4wOTE3OSwwLS4zMDY2NCwwLS42MTQyNi0uMDAzOS0uOTIwOWExMy41MDcxLDEzLjUwNzEsMCwwLDAtLjE4NTYtMi4wMDIsNi42MTc3LDYuNjE3NywwLDAsMC0uNjE5MS0xLjkwMzMyLDYuNDY2MTksNi40NjYxOSwwLDAsMC0yLjc5ODgtMi43OTk4LDYuNzY3NTQsNi43Njc1NCwwLDAsMC0xLjkwODItLjYyNywxMy4wNDM5NCwxMy4wNDM5NCwwLDAsMC0yLS4xNzY3NmMtLjMwNDctLjAwNDg4LS42MTcyLS4wMTA3NC0uOTIxOS0uMDEyNjktLjM1OTQtLjAwMi0uNzI0Ni0uMDAyLTEuMDg0LS4wMDJaIiBzdHlsZT0iZmlsbDogI2E2YTZhNiIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjQ0NDgzLDM5LjEyNWMtLjMwNDY4LDAtLjYwMi0uMDAzOS0uOTA0MjktLjAxMDdhMTIuNjg3MTQsMTIuNjg3MTQsMCwwLDEtMS44NjkxNC0uMTYzMSw1Ljg4MzgxLDUuODgzODEsMCwwLDEtMS42NTY3NC0uNTQ3OSw1LjQwNTczLDUuNDA1NzMsMCwwLDEtMS4zOTctMS4wMTY2LDUuMzIwODIsNS4zMjA4MiwwLDAsMS0xLjAyMDUxLTEuMzk2NSw1LjcyMTg2LDUuNzIxODYsMCwwLDEtLjU0My0xLjY1NzIsMTIuNDEzNTEsMTIuNDEzNTEsMCwwLDEtLjE2NjUtMS44NzVjLS4wMDYzNC0uMjEwOS0uMDE0NjQtLjkxMzEtLjAxNDY0LS45MTMxVjguNDQ0MzRTLjg4MTg1LDcuNzUyOTMuODg3Nyw3LjU0OThhMTIuMzcwMzksMTIuMzcwMzksMCwwLDEsLjE2NTUzLTEuODcyMDcsNS43NTU1LDUuNzU1NSwwLDAsMSwuNTQzNDYtMS42NjIxQTUuMzczNDksNS4zNzM0OSwwLDAsMSwyLjYxMTgzLDIuNjE3NjgsNS41NjU0Myw1LjU2NTQzLDAsMCwxLDQuMDE0MTcsMS41OTUyMWE1LjgyMzA5LDUuODIzMDksMCwwLDEsMS42NTMzMi0uNTQzOTRBMTIuNTg1ODksMTIuNTg1ODksMCwwLDEsNy41NDMuODg3MjFMOC40NDUzMi44NzVIMTExLjIxMzg3bC45MTMxLjAxMjdhMTIuMzg0OTMsMTIuMzg0OTMsMCwwLDEsMS44NTg0LjE2MjU5LDUuOTM4MzMsNS45MzgzMywwLDAsMSwxLjY3MDkuNTQ3ODUsNS41OTM3NCw1LjU5Mzc0LDAsMCwxLDIuNDE1LDIuNDE5OTMsNS43NjI2Nyw1Ljc2MjY3LDAsMCwxLC41MzUyLDEuNjQ4OTIsMTIuOTk1LDEyLjk5NSwwLDAsMSwuMTczOCwxLjg4NzIxYy4wMDI5LjI4MzIuMDAyOS41ODc0LjAwMjkuODkwMTQuMDA3OS4zNzUuMDA3OS43MzE5My4wMDc5LDEuMDkxNzlWMzAuNDY0OGMwLC4zNjMzLDAsLjcxNzgtLjAwNzksMS4wNzUyLDAsLjMyNTIsMCwuNjIzMS0uMDAzOS45Mjk3YTEyLjczMTI2LDEyLjczMTI2LDAsMCwxLS4xNzA5LDEuODUzNSw1LjczOSw1LjczOSwwLDAsMS0uNTQsMS42Nyw1LjQ4MDI5LDUuNDgwMjksMCwwLDEtMS4wMTU2LDEuMzg1Nyw1LjQxMjksNS40MTI5LDAsMCwxLTEuMzk5NCwxLjAyMjUsNS44NjE2OCw1Ljg2MTY4LDAsMCwxLTEuNjY4LjU0OTgsMTIuNTQyMTgsMTIuNTQyMTgsMCwwLDEtMS44NjkyLjE2MzFjLS4yOTI5LjAwNjgtLjU5OTYuMDEwNy0uODk3NC4wMTA3bC0xLjA4NC4wMDJaIi8+CiAgICAgIDwvZz4KICAgICAgPGcgaWQ9Il9Hcm91cF8iIGRhdGEtbmFtZT0iJmx0O0dyb3VwJmd0OyI+CiAgICAgICAgPGcgaWQ9Il9Hcm91cF8yIiBkYXRhLW5hbWU9IiZsdDtHcm91cCZndDsiPgogICAgICAgICAgPGcgaWQ9Il9Hcm91cF8zIiBkYXRhLW5hbWU9IiZsdDtHcm91cCZndDsiPgogICAgICAgICAgICA8cGF0aCBpZD0iX1BhdGhfIiBkYXRhLW5hbWU9IiZsdDtQYXRoJmd0OyIgZD0iTTI0Ljc2ODg4LDIwLjMwMDY4YTQuOTQ4ODEsNC45NDg4MSwwLDAsMSwyLjM1NjU2LTQuMTUyMDYsNS4wNjU2Niw1LjA2NTY2LDAsMCwwLTMuOTkxMTYtMi4xNTc2OGMtMS42NzkyNC0uMTc2MjYtMy4zMDcxOSwxLjAwNDgzLTQuMTYyOSwxLjAwNDgzLS44NzIyNywwLTIuMTg5NzctLjk4NzMzLTMuNjA4NS0uOTU4MTRhNS4zMTUyOSw1LjMxNTI5LDAsMCwwLTQuNDcyOTIsMi43Mjc4N2MtMS45MzQsMy4zNDg0Mi0uNDkxNDEsOC4yNjk0NywxLjM2MTIsMTAuOTc2MDguOTI2OSwxLjMyNTM1LDIuMDEwMTgsMi44MDU4LDMuNDI3NjMsMi43NTMzLDEuMzg3MDYtLjA1NzUzLDEuOTA1MS0uODg0NDgsMy41Nzk0LS44ODQ0OCwxLjY1ODc2LDAsMi4xNDQ3OS44ODQ0OCwzLjU5MS44NTExLDEuNDg4MzgtLjAyNDE2LDIuNDI2MTMtMS4zMzEyNCwzLjMyMDUxLTIuNjY5MTRhMTAuOTYyLDEwLjk2MiwwLDAsMCwxLjUxODQyLTMuMDkyNTFBNC43ODIwNSw0Ljc4MjA1LDAsMCwxLDI0Ljc2ODg4LDIwLjMwMDY4WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgICAgPHBhdGggaWQ9Il9QYXRoXzIiIGRhdGEtbmFtZT0iJmx0O1BhdGgmZ3Q7IiBkPSJNMjIuMDM3MjUsMTIuMjEwODlhNC44NzI0OCw0Ljg3MjQ4LDAsMCwwLDEuMTE0NTItMy40OTA2Miw0Ljk1NzQ2LDQuOTU3NDYsMCwwLDAtMy4yMDc1OCwxLjY1OTYxLDQuNjM2MzQsNC42MzYzNCwwLDAsMC0xLjE0MzcxLDMuMzYxMzlBNC4wOTkwNSw0LjA5OTA1LDAsMCwwLDIyLjAzNzI1LDEyLjIxMDg5WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICA8cGF0aCBkPSJNNDIuMzAyMjcsMjcuMTM5NjVoLTQuNzMzNGwtMS4xMzY3MiwzLjM1NjQ1SDM0LjQyNzI3bDQuNDgzNC0xMi40MThoMi4wODNsNC40ODM0LDEyLjQxOEg0My40MzhaTTM4LjA1OTEsMjUuNTkwODJoMy43NTJsLTEuODQ5NjEtNS40NDcyN2gtLjA1MTc2WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik01NS4xNTk2OSwyNS45Njk3M2MwLDIuODEzNDgtMS41MDU4Niw0LjYyMTA5LTMuNzc4MzIsNC42MjEwOWEzLjA2OTMsMy4wNjkzLDAsMCwxLTIuODQ4NjMtMS41ODRoLS4wNDN2NC40ODQzOGgtMS44NTg0VjIxLjQ0MjM4SDQ4LjQzMDJ2MS41MDU4NmguMDM0MThhMy4yMTE2MiwzLjIxMTYyLDAsMCwxLDIuODgyODEtMS42MDA1OUM1My42NDUsMjEuMzQ3NjYsNTUuMTU5NjksMjMuMTY0MDYsNTUuMTU5NjksMjUuOTY5NzNabS0xLjkxMDE2LDBjMC0xLjgzMy0uOTQ3MjctMy4wMzgwOS0yLjM5MjU4LTMuMDM4MDktMS40MTk5MiwwLTIuMzc1LDEuMjMwNDctMi4zNzUsMy4wMzgwOSwwLDEuODI0MjIuOTU1MDgsMy4wNDU5LDIuMzc1LDMuMDQ1OUM1Mi4zMDIyNywyOS4wMTU2Myw1My4yNDk1MywyNy44MTkzNCw1My4yNDk1MywyNS45Njk3M1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNNjUuMTI0NTMsMjUuOTY5NzNjMCwyLjgxMzQ4LTEuNTA1ODYsNC42MjEwOS0zLjc3ODMyLDQuNjIxMDlhMy4wNjkzLDMuMDY5MywwLDAsMS0yLjg0ODYzLTEuNTg0aC0uMDQzdjQuNDg0MzhoLTEuODU4NFYyMS40NDIzOEg1OC4zOTV2MS41MDU4NmguMDM0MThBMy4yMTE2MiwzLjIxMTYyLDAsMCwxLDYxLjMxMiwyMS4zNDc2NkM2My42MDk4OCwyMS4zNDc2Niw2NS4xMjQ1MywyMy4xNjQwNiw2NS4xMjQ1MywyNS45Njk3M1ptLTEuOTEwMTYsMGMwLTEuODMzLS45NDcyNy0zLjAzODA5LTIuMzkyNTgtMy4wMzgwOS0xLjQxOTkyLDAtMi4zNzUsMS4yMzA0Ny0yLjM3NSwzLjAzODA5LDAsMS44MjQyMi45NTUwOCwzLjA0NTksMi4zNzUsMy4wNDU5QzYyLjI2NzExLDI5LjAxNTYzLDYzLjIxNDM4LDI3LjgxOTM0LDYzLjIxNDM4LDI1Ljk2OTczWiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik03MS43MTA0NywyNy4wMzYxM2MuMTM3NywxLjIzMTQ1LDEuMzM0LDIuMDQsMi45Njg3NSwyLjA0LDEuNTY2NDEsMCwyLjY5MzM2LS44MDg1OSwyLjY5MzM2LTEuOTE4OTUsMC0uOTYzODctLjY3OTY5LTEuNTQxLTIuMjg5MDYtMS45MzY1MmwtMS42MDkzNy0uMzg3N2MtMi4yODAyNy0uNTUwNzgtMy4zMzg4Ny0xLjYxNzE5LTMuMzM4ODctMy4zNDc2NiwwLTIuMTQyNTgsMS44NjcxOS0zLjYxNDI2LDQuNTE4NTUtMy42MTQyNiwyLjYyNCwwLDQuNDIyODUsMS40NzE2OCw0LjQ4MzQsMy42MTQyNmgtMS44NzZjLS4xMTIzLTEuMjM5MjYtMS4xMzY3Mi0xLjk4NzMtMi42MzM3OS0xLjk4NzNzLTIuNTIxNDguNzU2ODQtMi41MjE0OCwxLjg1ODRjMCwuODc3OTMuNjU0MywxLjM5NDUzLDIuMjU0ODgsMS43OWwxLjM2ODE2LjMzNTk0YzIuNTQ3ODUuNjAyNTQsMy42MDY0NSwxLjYyNiwzLjYwNjQ1LDMuNDQyMzgsMCwyLjMyMzI0LTEuODUwNTksMy43NzgzMi00Ljc5Mzk1LDMuNzc4MzItMi43NTM5MSwwLTQuNjEzMjgtMS40MjA5LTQuNzMzNC0zLjY2N1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNODMuMzQ2MjEsMTkuMjk5OHYyLjE0MjU4aDEuNzIxNjh2MS40NzE2OEg4My4zNDYyMXY0Ljk5MTIxYzAsLjc3NTM5LjM0NDczLDEuMTM2NzIsMS4xMDE1NiwxLjEzNjcyYTUuODA3NTIsNS44MDc1MiwwLDAsMCwuNjExMzMtLjA0M3YxLjQ2Mjg5YTUuMTAzNTEsNS4xMDM1MSwwLDAsMS0xLjAzMjIzLjA4NTk0Yy0xLjgzMywwLTIuNTQ3ODUtLjY4ODQ4LTIuNTQ3ODUtMi40NDQzNFYyMi45MTQwNkg4MC4xNjI2MlYyMS40NDIzOEg4MS40NzlWMTkuMjk5OFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNODYuMDY1LDI1Ljk2OTczYzAtMi44NDg2MywxLjY3NzczLTQuNjM4NjcsNC4yOTM5NS00LjYzODY3LDIuNjI1LDAsNC4yOTQ5MiwxLjc5LDQuMjk0OTIsNC42Mzg2NywwLDIuODU2NDUtMS42NjExMyw0LjYzODY3LTQuMjk0OTIsNC42Mzg2N0M4Ny43MjYwOSwzMC42MDg0LDg2LjA2NSwyOC44MjYxNyw4Ni4wNjUsMjUuOTY5NzNabTYuNjk1MzEsMGMwLTEuOTU0MS0uODk1NTEtMy4xMDc0Mi0yLjQwMTM3LTMuMTA3NDJzLTIuNDAwMzksMS4xNjIxMS0yLjQwMDM5LDMuMTA3NDJjMCwxLjk2MTkxLjg5NDUzLDMuMTA2NDUsMi40MDAzOSwzLjEwNjQ1UzkyLjc2MDI3LDI3LjkzMTY0LDkyLjc2MDI3LDI1Ljk2OTczWiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik05Ni4xODYwNiwyMS40NDIzOGgxLjc3MjQ2djEuNTQxaC4wNDNhMi4xNTk0LDIuMTU5NCwwLDAsMSwyLjE3NzczLTEuNjM1NzQsMi44NjYxNiwyLjg2NjE2LDAsMCwxLC42MzY3Mi4wNjkzNHYxLjczODI4YTIuNTk3OTQsMi41OTc5NCwwLDAsMC0uODM1LS4xMTIzLDEuODcyNjQsMS44NzI2NCwwLDAsMC0xLjkzNjUyLDIuMDgzdjUuMzcwMTJoLTEuODU4NFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNMTA5LjM4NDMsMjcuODM2OTFjLS4yNSwxLjY0MzU1LTEuODUwNTksMi43NzE0OC0zLjg5ODQ0LDIuNzcxNDgtMi42MzM3OSwwLTQuMjY4NTUtMS43NjQ2NS00LjI2ODU1LTQuNTk1NywwLTIuODM5ODQsMS42NDM1NS00LjY4MTY0LDQuMTkwNDMtNC42ODE2NCwyLjUwNDg4LDAsNC4wODAwOCwxLjcyMDcsNC4wODAwOCw0LjQ2NTgydi42MzY3MmgtNi4zOTQ1M3YuMTEyM2EyLjM1OCwyLjM1OCwwLDAsMCwyLjQzNTU1LDIuNTY0NDUsMi4wNDgzNCwyLjA0ODM0LDAsMCwwLDIuMDkwODItMS4yNzM0NFptLTYuMjgyMjMtMi43MDIxNWg0LjUyNjM3YTIuMTc3MywyLjE3NzMsMCwwLDAtMi4yMjA3LTIuMjk3ODVBMi4yOTIsMi4yOTIsMCwwLDAsMTAzLjEwMjA3LDI1LjEzNDc3WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICA8L2c+CiAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJfR3JvdXBfNCIgZGF0YS1uYW1lPSImbHQ7R3JvdXAmZ3Q7Ij4KICAgICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTM3LjgyNjE5LDguNzMxYTIuNjM5NjQsMi42Mzk2NCwwLDAsMSwyLjgwNzYyLDIuOTY0ODRjMCwxLjkwNjI1LTEuMDMwMjcsMy4wMDItMi44MDc2MiwzLjAwMkgzNS42NzA5MlY4LjczMVptLTEuMjI4NTIsNS4xMjNoMS4xMjVhMS44NzU4OCwxLjg3NTg4LDAsMCwwLDEuOTY3NzctMi4xNDYsMS44ODEsMS44ODEsMCwwLDAtMS45Njc3Ny0yLjEzMzc5aC0xLjEyNVoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTQxLjY4MDY4LDEyLjQ0NDM0YTIuMTMzMjMsMi4xMzMyMywwLDEsMSw0LjI0NzA3LDAsMi4xMzM1OCwyLjEzMzU4LDAsMSwxLTQuMjQ3MDcsMFptMy4zMzMsMGMwLS45NzYwNy0uNDM4NDgtMS41NDY4Ny0xLjIwOC0xLjU0Njg3LS43NzI0NiwwLTEuMjA3LjU3MDgtMS4yMDcsMS41NDY4OCwwLC45ODM4OS40MzQ1NywxLjU1MDI5LDEuMjA3LDEuNTUwMjlDNDQuNTc1MjIsMTMuOTk0NjMsNDUuMDEzNjksMTMuNDI0MzIsNDUuMDEzNjksMTIuNDQ0MzRaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik01MS41NzMyNiwxNC42OTc3NWgtLjkyMTg3bC0uOTMwNjYtMy4zMTY0MWgtLjA3MDMxbC0uOTI2NzYsMy4zMTY0MWgtLjkxMzA5bC0xLjI0MTIxLTQuNTAyOTNoLjkwMTM3bC44MDY2NCwzLjQzNmguMDY2NDFsLjkyNTc4LTMuNDM2aC44NTI1NGwuOTI1NzgsMy40MzZoLjA3MDMxbC44MDI3My0zLjQzNmguODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik01My44NTM1NCwxMC4xOTQ4Mkg1NC43MDl2LjcxNTMzaC4wNjY0MWExLjM0OCwxLjM0OCwwLDAsMSwxLjM0Mzc1LS44MDIyNSwxLjQ2NDU2LDEuNDY0NTYsMCwwLDEsMS41NTg1OSwxLjY3NDh2Mi45MTVoLS44ODg2N1YxMi4wMDU4NmMwLS43MjM2My0uMzE0NDUtMS4wODM1LS45NzE2OC0xLjA4MzVhMS4wMzI5NCwxLjAzMjk0LDAsMCwwLTEuMDc1MiwxLjE0MTExdjIuNjM0MjhoLS44ODg2N1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTU5LjA5Mzc3LDguNDM3aC44ODg2N3Y2LjI2MDc0aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik02MS4yMTc3OSwxMi40NDQzNGEyLjEzMzQ2LDIuMTMzNDYsMCwxLDEsNC4yNDc1NiwwLDIuMTMzOCwyLjEzMzgsMCwxLDEtNC4yNDc1NiwwWm0zLjMzMywwYzAtLjk3NjA3LS40Mzg0OC0xLjU0Njg3LTEuMjA4LTEuNTQ2ODctLjc3MjQ2LDAtMS4yMDcuNTcwOC0xLjIwNywxLjU0Njg4LDAsLjk4Mzg5LjQzNDU3LDEuNTUwMjksMS4yMDcsMS41NTAyOUM2NC4xMTIzMiwxMy45OTQ2Myw2NC41NTA4LDEzLjQyNDMyLDY0LjU1MDgsMTIuNDQ0MzRaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik02Ni40MDA5LDEzLjQyNDMyYzAtLjgxMDU1LjYwMzUyLTEuMjc3ODMsMS42NzQ4LTEuMzQ0MjRsMS4yMTk3My0uMDcwMzF2LS4zODg2N2MwLS40NzU1OS0uMzE0NDUtLjc0NDE0LS45MjE4Ny0uNzQ0MTQtLjQ5NjA5LDAtLjgzOTg0LjE4MjEzLS45Mzg0OC41MDA0OWgtLjg2MDM1Yy4wOTA4Mi0uNzczNDQuODE4MzYtMS4yNjk1MywxLjgzOTg0LTEuMjY5NTMsMS4xMjg5MSwwLDEuNzY1NjMuNTYyLDEuNzY1NjMsMS41MTMxOHYzLjA3NjY2aC0uODU1NDd2LS42MzI4MWgtLjA3MDMxYTEuNTE1LDEuNTE1LDAsMCwxLTEuMzUyNTQuNzA3QTEuMzYwMjYsMS4zNjAyNiwwLDAsMSw2Ni40MDA5LDEzLjQyNDMyWm0yLjg5NDUzLS4zODQ3N3YtLjM3NjQ2bC0xLjA5OTYxLjA3MDMxYy0uNjIwMTIuMDQxNS0uOTAxMzcuMjUyNDQtLjkwMTM3LjY0OTQxLDAsLjQwNTI3LjM1MTU2LjY0MTExLjgzNS42NDExMUExLjA2MTUsMS4wNjE1LDAsMCwwLDY5LjI5NTQzLDEzLjAzOTU1WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICA8cGF0aCBkPSJNNzEuMzQ4MTYsMTIuNDQ0MzRjMC0xLjQyMjg1LjczMTQ1LTIuMzI0MjIsMS44NjkxNC0yLjMyNDIyYTEuNDg0LDEuNDg0LDAsMCwxLDEuMzgwODYuNzloLjA2NjQxVjguNDM3aC44ODg2N3Y2LjI2MDc0aC0uODUxNTZ2LS43MTE0M2gtLjA3MDMxYTEuNTYyODQsMS41NjI4NCwwLDAsMS0xLjQxNDA2Ljc4NTY0QzcyLjA3MTgsMTQuNzcyLDcxLjM0ODE2LDEzLjg3MDYxLDcxLjM0ODE2LDEyLjQ0NDM0Wm0uOTE4LDBjMCwuOTU1MDguNDUwMiwxLjUyOTc5LDEuMjAzMTMsMS41Mjk3OS43NDksMCwxLjIxMTkxLS41ODMsMS4yMTE5MS0xLjUyNTg4LDAtLjkzODQ4LS40Njc3Ny0xLjUyOTc5LTEuMjExOTEtMS41Mjk3OUM3Mi43MjEyMSwxMC45MTg0Niw3Mi4yNjYxMywxMS40OTcwNyw3Mi4yNjYxMywxMi40NDQzNFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTc5LjIzLDEyLjQ0NDM0YTIuMTMzMjMsMi4xMzMyMywwLDEsMSw0LjI0NzA3LDAsMi4xMzM1OCwyLjEzMzU4LDAsMSwxLTQuMjQ3MDcsMFptMy4zMzMsMGMwLS45NzYwNy0uNDM4NDgtMS41NDY4Ny0xLjIwOC0xLjU0Njg3LS43NzI0NiwwLTEuMjA3LjU3MDgtMS4yMDcsMS41NDY4OCwwLC45ODM4OS40MzQ1NywxLjU1MDI5LDEuMjA3LDEuNTUwMjlDODIuMTI0NTMsMTMuOTk0NjMsODIuNTYzLDEzLjQyNDMyLDgyLjU2MywxMi40NDQzNFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTg0LjY2OTQ1LDEwLjE5NDgyaC44NTU0N3YuNzE1MzNoLjA2NjQxYTEuMzQ4LDEuMzQ4LDAsMCwxLDEuMzQzNzUtLjgwMjI1LDEuNDY0NTYsMS40NjQ1NiwwLDAsMSwxLjU1ODU5LDEuNjc0OHYyLjkxNUg4Ny42MDVWMTIuMDA1ODZjMC0uNzIzNjMtLjMxNDQ1LTEuMDgzNS0uOTcxNjgtMS4wODM1YTEuMDMyOTQsMS4wMzI5NCwwLDAsMC0xLjA3NTIsMS4xNDExMXYyLjYzNDI4aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik05My41MTUxNiw5LjA3MzczdjEuMTQxNmguOTc1NTl2Ljc0ODU0aC0uOTc1NTlWMTMuMjc5M2MwLC40NzE2OC4xOTQzNC42NzgyMi42MzY3Mi42NzgyMmEyLjk2NjU3LDIuOTY2NTcsMCwwLDAsLjMzODg3LS4wMjA1MXYuNzQwMjNhMi45MTU1LDIuOTE1NSwwLDAsMS0uNDgzNC4wNDU0MWMtLjk4ODI4LDAtMS4zODE4NC0uMzQ3NjYtMS4zODE4NC0xLjIxNTgydi0yLjU0M2gtLjcxNDg0di0uNzQ4NTRoLjcxNDg0VjkuMDczNzNaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik05NS43MDQ2MSw4LjQzN2guODgwODZ2Mi40ODE0NWguMDcwMzFhMS4zODU2LDEuMzg1NiwwLDAsMSwxLjM3My0uODA2NjQsMS40ODMzOSwxLjQ4MzM5LDAsMCwxLDEuNTUwNzgsMS42Nzg3MXYyLjkwNzIzSDk4LjY5di0yLjY4OGMwLS43MTkyNC0uMzM1LTEuMDgzNS0uOTYyODktMS4wODM1YTEuMDUxOTQsMS4wNTE5NCwwLDAsMC0xLjEzMzc5LDEuMTQxNnYyLjYyOTg4aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xMDQuNzYxMjUsMTMuNDgxOTNhMS44MjgsMS44MjgsMCwwLDEtMS45NTExNywxLjMwMjczQTIuMDQ1MzEsMi4wNDUzMSwwLDAsMSwxMDAuNzMsMTIuNDYwNDVhMi4wNzY4NSwyLjA3Njg1LDAsMCwxLDIuMDc2MTctMi4zNTI1NGMxLjI1MjkzLDAsMi4wMDg3OS44NTYsMi4wMDg3OSwyLjI3VjEyLjY4OGgtMy4xNzk2OXYuMDQ5OGExLjE5MDIsMS4xOTAyLDAsMCwwLDEuMTk5MjIsMS4yOSwxLjA3OTM0LDEuMDc5MzQsMCwwLDAsMS4wNzEyOS0uNTQ1OVptLTMuMTI2LTEuNDUxMTdoMi4yNzQ0MWExLjA4NjQ3LDEuMDg2NDcsMCwwLDAtMS4xMDg0LTEuMTY2NUExLjE1MTYyLDEuMTUxNjIsMCwwLDAsMTAxLjYzNTI3LDEyLjAzMDc2WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" alt="Download on the App Store" width="120" height="40">
-        </a>
-      </div>
-      <p class="cta">Free on the App Store. No ads, no tracking.</p>
-    </div>
-    <div class="plaque-slot">
-      <svg class="plaque" viewBox="0 0 360 480" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="plaque-body" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="var(--plaque-top)"/>
-            <stop offset="1" stop-color="var(--plaque-bottom)"/>
-          </linearGradient>
-          <radialGradient id="plaque-shadow" cx="0.5" cy="0.5" r="0.5">
-            <stop offset="0" stop-color="#000000" stop-opacity="0.16"/>
-            <stop offset="1" stop-color="#000000" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <ellipse cx="182" cy="464" rx="150" ry="10" fill="url(#plaque-shadow)"/>
-        <rect x="6" y="6" width="348" height="452" rx="20" fill="var(--plaque-border)"/>
-        <rect x="16" y="16" width="328" height="432" rx="13" fill="url(#plaque-body)"/>
-        <rect x="30" y="30" width="300" height="404" rx="7" fill="none" stroke="var(--plaque-engraving)" stroke-width="1.5"/>
-        <circle cx="180" cy="92" r="17" fill="none" stroke="var(--plaque-star)" stroke-width="1.5" opacity="0.9"/>
-        <path d="M180 83L182.2 89L188.6 89.2L183.5 93.1L185.3 99.3L180 95.7L174.7 99.3L176.5 93.1L171.4 89.2L177.8 89Z" fill="var(--plaque-star)" opacity="0.9"/>
-        <rect x="70" y="170" width="220" height="10" rx="5" fill="var(--plaque-engraving)"/>
-        <rect x="85" y="205" width="190" height="10" rx="5" fill="var(--plaque-engraving)"/>
-        <rect x="60" y="240" width="240" height="10" rx="5" fill="var(--plaque-engraving)"/>
-        <rect x="100" y="275" width="160" height="10" rx="5" fill="var(--plaque-engraving)"/>
-        <rect x="75" y="310" width="210" height="10" rx="5" fill="var(--plaque-engraving)"/>
-        <path d="M70 476H290" stroke="var(--ink-muted)" stroke-width="1.5" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.5"/>
-      </svg>
-    </div>
-  </header>
-  <main>
-    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
-      <defs>
-        <pattern id="divider-motif-1" width="54" height="12" patternUnits="userSpaceOnUse">
-          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
-            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
-            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
-          </g>
-        </pattern>
-      </defs>
-      <rect width="100%" height="12" fill="url(#divider-motif-1)"/>
-    </svg>
-    <section class="column" aria-labelledby="features-heading">
-      <h2 id="features-heading">Why you'll want it</h2>
-      <ul class="feature-grid">
-        <li>
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <path d="M5 19v-4"/>
-            <path d="M9.5 19v-7"/>
-            <path d="M14 19v-10"/>
-            <path d="M18.5 19v-13"/>
-            <path d="M4.5 20.5L20 4.5"/>
-          </svg>
-          <h3>Works anywhere, even with no signal</h3>
-          <p>Everything runs off a database built into the app. No signal required, no loading spinner on a backroad with no bars.</p>
-        </li>
-        <li>
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <path d="M2.5 20.5L13.5 9"/>
-            <path d="M11.5 20.5L17 9"/>
-            <path d="M7 20.2L15.2 9.4" stroke-dasharray="2.4 3.2"/>
-            <path d="M17.2 14.5c-2.4-2.6-3.6-4.4-3.6-6.1a3.6 3.6 0 1 1 7.2 0c0 1.7-1.2 3.5-3.6 6.1z"/>
-          </svg>
-          <h3>See what's coming up before you pass it</h3>
-          <p>The app shows your distance and direction to nearby markers, with an "ahead of you" filter so you can see what's coming up before you get there.</p>
-        </li>
-        <li>
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <path d="M12 3.5v9.5H18.5"/>
-            <path d="M15 9.5L18.5 13L15 16.5"/>
-          </svg>
-          <h3>Apple Maps gets you there</h3>
-          <p>Tap through to Apple Maps for turn-by-turn directions when you do want to stop.</p>
-        </li>
-      </ul>
-    </section>
-    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
-      <defs>
-        <pattern id="divider-motif-2" width="54" height="12" patternUnits="userSpaceOnUse">
-          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
-            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
-            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
-          </g>
-        </pattern>
-      </defs>
-      <rect width="100%" height="12" fill="url(#divider-motif-2)"/>
-    </svg>
-    <section class="column" aria-labelledby="free-heading">
-      <div class="free-column">
-        <h2 id="free-heading">100% Free, No Catch</h2>
-        <p>TexasLandmarks is free. Not a free trial, not a freemium tier with a paywall behind it. Just free.</p>
-        <ul class="checklist">
-          <li>
-            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M3 8.5l3.5 3.5L13 4.5"/>
-            </svg>
-            <span>No ads</span>
-          </li>
-          <li>
-            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M3 8.5l3.5 3.5L13 4.5"/>
-            </svg>
-            <span>No in-app purchases</span>
-          </li>
-          <li>
-            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M3 8.5l3.5 3.5L13 4.5"/>
-            </svg>
-            <span>No subscriptions</span>
-          </li>
-          <li>
-            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M3 8.5l3.5 3.5L13 4.5"/>
-            </svg>
-            <span>No accounts or sign-in required</span>
-          </li>
-          <li>
-            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-              <path d="M3 8.5l3.5 3.5L13 4.5"/>
-            </svg>
-            <span>No tracking</span>
-          </li>
-        </ul>
-        <p class="closer">You download it, it works, that's it.</p>
-      </div>
-    </section>
-    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
-      <defs>
-        <pattern id="divider-motif-3" width="54" height="12" patternUnits="userSpaceOnUse">
-          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
-            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
-            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
-          </g>
-        </pattern>
-      </defs>
-      <rect width="100%" height="12" fill="url(#divider-motif-3)"/>
-    </svg>
-    <section class="column" id="privacy" aria-labelledby="privacy-heading">
-      <div class="privacy-column">
-        <h2 id="privacy-heading">Privacy Policy</h2>
-        <p>TexasLandmarks collects no data. It's fully offline. Nothing you do in the app is sent anywhere.</p>
-        <p>Location stays on your phone. If you allow location access, your position is used on the device to find nearby markers. It's never uploaded.</p>
-        <p>No third parties receive any data, because none is collected.</p>
-        <p>Nothing is retained, so there's nothing to delete and no account to cancel.</p>
-        <p>No accounts, no sign-in. The app just works.</p>
-        <p>No tracking, no analytics, no ads. This page doesn't track you either.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="column">
-    <p class="footer-line">Built by one developer who got tired of driving past history without knowing what it was.</p>
-    <p class="footer-line">© 2026 Jason Costello</p>
-    <p class="footer-line">Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc., registered in the U.S. and other countries.</p>
-    <p class="footer-line"><a href="#privacy">Privacy Policy</a></p>
-  </footer>
-</body>
-</html>
+</body></html>
