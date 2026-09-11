@@ -1,257 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Texas Landmarks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>TexasLandmarks, Texas Historical Markers Map</title>
+  <meta name="description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline. Free on the App Store. No ads, no tracking.">
+  <link rel="canonical" href="https://texaslandmarks.costello.wtf/">
+  <meta name="apple-itunes-app" content="app-id=6755979204">
+  <meta property="og:title" content="TexasLandmarks, Texas Historical Markers Map">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://texaslandmarks.costello.wtf/">
+  <meta property="og:description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline.">
+  <meta property="og:site_name" content="TexasLandmarks">
+  <meta property="og:image" content="https://texaslandmarks.costello.wtf/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TexasLandmarks, over 13,000 Texas historical markers, full text, offline">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TexasLandmarks, Texas Historical Markers Map">
+  <meta name="twitter:description" content="Over 13,000 official Texas Historical Commission markers. Full text, offline.">
+  <meta name="twitter:image" content="https://texaslandmarks.costello.wtf/og-image.png">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2FlYjhjMCIvPgogIDxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgcng9IjMuNSIgZmlsbD0iIzFmNGU3OSIvPgogIDxyZWN0IHg9IjkiIHk9IjEwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZjhmNmYwIiBmaWxsLW9wYWNpdHk9IjAuNTUiLz4KICA8cmVjdCB4PSIxMSIgeT0iMTUuNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiNmOGY2ZjAiIGZpbGwtb3BhY2l0eT0iMC41NSIvPgogIDxyZWN0IHg9IjkiIHk9IjIwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZjhmNmYwIiBmaWxsLW9wYWNpdHk9IjAuNTUiLz4KPC9zdmc+Cg==">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'none'; connect-src 'none'; font-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg: #f5f6f7;
+      --surface: #ffffff;
+      --hairline: #dde3e8;
+      --accent: #1f4e79;
+      --ink: #1c232b;
+      --ink-muted: #5b6672;
+      --divider-motif: #aeb8c0;
+      --check: var(--ink-muted);
+      --focus-ring: var(--accent);
+      --badge-surface: #ffffff;
+      --plaque-border: #aeb8c0;
+      --plaque-top: #2a5d8f;
+      --plaque-bottom: #1f4e79;
+      --plaque-engraving: rgba(248, 246, 240, 0.55);
+      --plaque-star: #e8e6e1;
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --space-2xl: 48px;
+      --space-3xl: 64px;
+      --space-4xl: 96px;
+      --font-display: Georgia, "Times New Roman", Times, serif;
+      --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color-scheme: light dark;
     }
 
-    :root {
-      --bg: #1c4a61;
-      --bg-card: #163d52;
-      --border: rgba(237, 217, 181, 0.15);
-      --tan: #edd9b5;
-      --tan-muted: rgba(237, 217, 181, 0.65);
-      --tan-subtle: rgba(237, 217, 181, 0.35);
-      --accent: #f0a500;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181d;
+        --surface: #1e2229;
+        --hairline: #333a44;
+        --accent: #7fa8cc;
+        --ink: #e8e6e1;
+        --ink-muted: #a7b0ba;
+        --divider-motif: #3a434d;
+        --plaque-border: #5c6670;
+        --plaque-top: #4d7ba6;
+        --plaque-bottom: #33597e;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--tan);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: var(--bg-card);
-      border-bottom: 1px solid var(--border);
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .wordmark {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--tan-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    header h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--tan);
-      letter-spacing: -0.01em;
-    }
-
-    .meta {
-      font-size: 0.85rem;
-      color: var(--tan-muted);
-      margin-top: 0.5rem;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 5rem;
-    }
-
-    .intro {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2.5rem;
-      color: var(--tan-muted);
-      font-size: 0.95rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
-    }
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--tan);
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    p {
-      color: var(--tan-muted);
-      margin-bottom: 0.75rem;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      color: var(--tan-muted);
-      padding-left: 1.25rem;
-      margin-bottom: 0.75rem;
-    }
-
-    ul li {
-      margin-bottom: 0.35rem;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.75rem;
-    }
-
-    .pill {
-      background-color: rgba(237, 217, 181, 0.08);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.3rem 0.85rem;
-      font-size: 0.8rem;
-      color: var(--tan-muted);
-      white-space: nowrap;
-    }
-
-    .pill.green {
-      background-color: rgba(52, 199, 89, 0.12);
-      border-color: rgba(52, 199, 89, 0.3);
-      color: #34c759;
-    }
-
-    .pill.red {
-      background-color: rgba(255, 69, 58, 0.12);
-      border-color: rgba(255, 69, 58, 0.3);
-      color: #ff453a;
-    }
-
-    .highlight-box {
-      background-color: rgba(52, 199, 89, 0.08);
-      border: 1px solid rgba(52, 199, 89, 0.25);
-      border-radius: 10px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 1rem;
-    }
-
-    .highlight-box p {
-      color: rgba(237, 217, 181, 0.8);
       margin: 0;
-      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .column {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: 720px) {
+      .column {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media (min-width: 1080px) {
+      .column {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+    }
+
+    .hero {
+      padding-top: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+    }
+
+    .hook {
+      margin: 0 0 var(--space-md);
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    h1 {
+      margin: 0 0 var(--space-md);
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3vw, 34px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .tagline {
+      font-weight: 400;
+      color: var(--accent);
+    }
+
+    .stat {
+      margin: 0 0 var(--space-xl);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+
+    .badge-card {
+      display: block;
+      background: var(--badge-surface);
+      border: 1px solid var(--hairline);
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+
+    .badge-card a {
+      display: block;
+      line-height: 0;
+    }
+
+    .badge-card img {
+      display: block;
+    }
+
+    .badge-card:has(a:hover) {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .cta {
+      margin: var(--space-md) 0 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--ink-muted);
+    }
+
+    .plaque {
+      display: block;
+      width: 100%;
+      max-width: min(330px, 55vw);
+      height: auto;
+      margin: var(--space-2xl) auto 0;
+    }
+
+    .plaque-slot {
+      justify-self: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .badge-card {
+        display: inline-block;
+      }
+
+      .plaque {
+        margin-top: 0;
+      }
     }
 
     a {
       color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
       text-decoration: underline;
     }
 
+    a:hover {
+      color: color-mix(in srgb, var(--accent), black 12%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      a:hover {
+        color: color-mix(in srgb, var(--accent), white 8%);
+      }
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    /* Badge CTA focus ring sits on the intentionally-white badge card in both
+       schemes; the dark-scheme accent (#7fa8cc) fails WCAG 2.2 AA 3:1 there.
+       Constant dark-blue ring keeps 8.66:1 on white regardless of scheme
+       (code review WR-01). */
+    .badge-card a:focus-visible {
+      outline-color: #1f4e79;
+    }
+
+    section {
+      padding-top: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+    }
+
+    @media (min-width: 1080px) {
+      section {
+        padding-top: var(--space-4xl);
+        padding-bottom: var(--space-4xl);
+      }
+    }
+
+    h2 {
+      margin: 0 0 var(--space-lg);
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3vw, 34px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-grid li {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 8px;
+      padding: var(--space-lg);
+    }
+
+    .feature-grid svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    h3 {
+      margin: var(--space-md) 0 var(--space-sm);
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3vw, 34px);
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .feature-grid p {
+      margin: 0;
+    }
+
+    .free-column {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .free-column p {
+      margin: 0 0 var(--space-md);
+    }
+
+    .checklist {
+      margin: var(--space-xl) 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+
+    .checklist li + li {
+      margin-top: var(--space-xl);
+    }
+
+    .check-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .free-column p.closer {
+      margin: 0;
+    }
+
+    .privacy-column {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .privacy-column p {
+      margin: 0;
+    }
+
+    .privacy-column p + p {
+      margin-top: var(--space-md);
+    }
+
+    .divider {
+      display: block;
+      width: 100%;
+      height: 12px;
+      margin: 0;
+    }
+
     footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--tan-subtle);
+      padding-top: var(--space-2xl);
+      padding-bottom: var(--space-3xl);
+    }
+
+    .footer-line {
+      margin: 0 0 var(--space-sm);
+      font-size: 13px;
+      line-height: 1.4;
+      color: var(--ink-muted);
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="wordmark">Texas Landmarks</div>
-    <h1>Privacy Policy</h1>
-    <div class="meta">Effective date: March 8, 2026 &nbsp;·&nbsp; Version 1.0</div>
-  </header>
-
-  <main>
-
-    <div class="intro">
-      Texas Landmarks is a simple, offline app for discovering historical markers across the Lone Star State. This policy explains exactly what data the app accesses, how it is used, and what is never collected or shared.
+  <header class="hero column">
+    <div class="hero-text">
+      <p class="hook">You've always wondered what those signs say.</p>
+      <h1>TexasLandmarks<span class="tagline">, Texas Historical Markers Map</span></h1>
+      <p class="stat">Over 13,000 official Texas Historical Commission markers. Full text, offline.</p>
+      <div class="badge-card">
+        <!-- App Store badge: embedded unmodified from https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg (10804 bytes, fetched 2026-09-05) -->
+        <a href="https://apps.apple.com/us/app/texaslandmarks/id6755979204">
+          <img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibGl2ZXR5cGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjExOS42NjQwNyIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDExOS42NjQwNyA0MCI+CiAgPHRpdGxlPkRvd25sb2FkX29uX3RoZV9BcHBfU3RvcmVfQmFkZ2VfVVMtVUtfUkdCX2Jsa180U1ZHXzA5MjkxNzwvdGl0bGU+CiAgPGc+CiAgICA8Zz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTExMC4xMzQ3NywwSDkuNTM0NjhjLS4zNjY3LDAtLjcyOSwwLTEuMDk0NzMuMDAyLS4zMDYxNS4wMDItLjYwOTg2LjAwNzgxLS45MTg5NS4wMTI3QTEzLjIxNDc2LDEzLjIxNDc2LDAsMCwwLDUuNTE3MS4xOTE0MWE2LjY2NTA5LDYuNjY1MDksMCwwLDAtMS45MDA4OC42MjdBNi40Mzc3OSw2LjQzNzc5LDAsMCwwLDEuOTk3NTcsMS45OTcwNyw2LjI1ODQ0LDYuMjU4NDQsMCwwLDAsLjgxOTM1LDMuNjE4MTZhNi42MDExOSw2LjYwMTE5LDAsMCwwLS42MjUsMS45MDMzMiwxMi45OTMsMTIuOTkzLDAsMCwwLS4xNzkyLDIuMDAyQy4wMDU4Nyw3LjgzMDA4LjAwNDg5LDguMTM3NywwLDguNDQ0MzRWMzEuNTU4NmMuMDA0ODkuMzEwNS4wMDU4Ny42MTEzLjAxNTE1LjkyMTlhMTIuOTkyMzIsMTIuOTkyMzIsMCwwLDAsLjE3OTIsMi4wMDE5LDYuNTg3NTYsNi41ODc1NiwwLDAsMCwuNjI1LDEuOTA0M0E2LjIwNzc4LDYuMjA3NzgsMCwwLDAsMS45OTc1NywzOC4wMDFhNi4yNzQ0NSw2LjI3NDQ1LDAsMCwwLDEuNjE4NjUsMS4xNzg3LDYuNzAwODIsNi43MDA4MiwwLDAsMCwxLjkwMDg4LjYzMDgsMTMuNDU1MTQsMTMuNDU1MTQsMCwwLDAsMi4wMDM5LjE3NjhjLjMwOTA5LjAwNjguNjEyOC4wMTA3LjkxODk1LjAxMDdDOC44MDU2Nyw0MCw5LjE2OCw0MCw5LjUzNDY4LDQwSDExMC4xMzQ3N2MuMzU5NCwwLC43MjQ2LDAsMS4wODQtLjAwMi4zMDQ3LDAsLjYxNzItLjAwMzkuOTIxOS0uMDEwN2ExMy4yNzksMTMuMjc5LDAsMCwwLDItLjE3NjgsNi44MDQzMiw2LjgwNDMyLDAsMCwwLDEuOTA4Mi0uNjMwOCw2LjI3NzQyLDYuMjc3NDIsMCwwLDAsMS42MTcyLTEuMTc4Nyw2LjM5NDgyLDYuMzk0ODIsMCwwLDAsMS4xODE2LTEuNjE0Myw2LjYwNDEzLDYuNjA0MTMsMCwwLDAsLjYxOTEtMS45MDQzLDEzLjUwNjQzLDEzLjUwNjQzLDAsMCwwLC4xODU2LTIuMDAxOWMuMDAzOS0uMzEwNi4wMDM5LS42MTE0LjAwMzktLjkyMTkuMDA3OC0uMzYzMy4wMDc4LS43MjQ2LjAwNzgtMS4wOTM4VjkuNTM2MTNjMC0uMzY2MjEsMC0uNzI5NDktLjAwNzgtMS4wOTE3OSwwLS4zMDY2NCwwLS42MTQyNi0uMDAzOS0uOTIwOWExMy41MDcxLDEzLjUwNzEsMCwwLDAtLjE4NTYtMi4wMDIsNi42MTc3LDYuNjE3NywwLDAsMC0uNjE5MS0xLjkwMzMyLDYuNDY2MTksNi40NjYxOSwwLDAsMC0yLjc5ODgtMi43OTk4LDYuNzY3NTQsNi43Njc1NCwwLDAsMC0xLjkwODItLjYyNywxMy4wNDM5NCwxMy4wNDM5NCwwLDAsMC0yLS4xNzY3NmMtLjMwNDctLjAwNDg4LS42MTcyLS4wMTA3NC0uOTIxOS0uMDEyNjktLjM1OTQtLjAwMi0uNzI0Ni0uMDAyLTEuMDg0LS4wMDJaIiBzdHlsZT0iZmlsbDogI2E2YTZhNiIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjQ0NDgzLDM5LjEyNWMtLjMwNDY4LDAtLjYwMi0uMDAzOS0uOTA0MjktLjAxMDdhMTIuNjg3MTQsMTIuNjg3MTQsMCwwLDEtMS44NjkxNC0uMTYzMSw1Ljg4MzgxLDUuODgzODEsMCwwLDEtMS42NTY3NC0uNTQ3OSw1LjQwNTczLDUuNDA1NzMsMCwwLDEtMS4zOTctMS4wMTY2LDUuMzIwODIsNS4zMjA4MiwwLDAsMS0xLjAyMDUxLTEuMzk2NSw1LjcyMTg2LDUuNzIxODYsMCwwLDEtLjU0My0xLjY1NzIsMTIuNDEzNTEsMTIuNDEzNTEsMCwwLDEtLjE2NjUtMS44NzVjLS4wMDYzNC0uMjEwOS0uMDE0NjQtLjkxMzEtLjAxNDY0LS45MTMxVjguNDQ0MzRTLjg4MTg1LDcuNzUyOTMuODg3Nyw3LjU0OThhMTIuMzcwMzksMTIuMzcwMzksMCwwLDEsLjE2NTUzLTEuODcyMDcsNS43NTU1LDUuNzU1NSwwLDAsMSwuNTQzNDYtMS42NjIxQTUuMzczNDksNS4zNzM0OSwwLDAsMSwyLjYxMTgzLDIuNjE3NjgsNS41NjU0Myw1LjU2NTQzLDAsMCwxLDQuMDE0MTcsMS41OTUyMWE1LjgyMzA5LDUuODIzMDksMCwwLDEsMS42NTMzMi0uNTQzOTRBMTIuNTg1ODksMTIuNTg1ODksMCwwLDEsNy41NDMuODg3MjFMOC40NDUzMi44NzVIMTExLjIxMzg3bC45MTMxLjAxMjdhMTIuMzg0OTMsMTIuMzg0OTMsMCwwLDEsMS44NTg0LjE2MjU5LDUuOTM4MzMsNS45MzgzMywwLDAsMSwxLjY3MDkuNTQ3ODUsNS41OTM3NCw1LjU5Mzc0LDAsMCwxLDIuNDE1LDIuNDE5OTMsNS43NjI2Nyw1Ljc2MjY3LDAsMCwxLC41MzUyLDEuNjQ4OTIsMTIuOTk1LDEyLjk5NSwwLDAsMSwuMTczOCwxLjg4NzIxYy4wMDI5LjI4MzIuMDAyOS41ODc0LjAwMjkuODkwMTQuMDA3OS4zNzUuMDA3OS43MzE5My4wMDc5LDEuMDkxNzlWMzAuNDY0OGMwLC4zNjMzLDAsLjcxNzgtLjAwNzksMS4wNzUyLDAsLjMyNTIsMCwuNjIzMS0uMDAzOS45Mjk3YTEyLjczMTI2LDEyLjczMTI2LDAsMCwxLS4xNzA5LDEuODUzNSw1LjczOSw1LjczOSwwLDAsMS0uNTQsMS42Nyw1LjQ4MDI5LDUuNDgwMjksMCwwLDEtMS4wMTU2LDEuMzg1Nyw1LjQxMjksNS40MTI5LDAsMCwxLTEuMzk5NCwxLjAyMjUsNS44NjE2OCw1Ljg2MTY4LDAsMCwxLTEuNjY4LjU0OTgsMTIuNTQyMTgsMTIuNTQyMTgsMCwwLDEtMS44NjkyLjE2MzFjLS4yOTI5LjAwNjgtLjU5OTYuMDEwNy0uODk3NC4wMTA3bC0xLjA4NC4wMDJaIi8+CiAgICAgIDwvZz4KICAgICAgPGcgaWQ9Il9Hcm91cF8iIGRhdGEtbmFtZT0iJmx0O0dyb3VwJmd0OyI+CiAgICAgICAgPGcgaWQ9Il9Hcm91cF8yIiBkYXRhLW5hbWU9IiZsdDtHcm91cCZndDsiPgogICAgICAgICAgPGcgaWQ9Il9Hcm91cF8zIiBkYXRhLW5hbWU9IiZsdDtHcm91cCZndDsiPgogICAgICAgICAgICA8cGF0aCBpZD0iX1BhdGhfIiBkYXRhLW5hbWU9IiZsdDtQYXRoJmd0OyIgZD0iTTI0Ljc2ODg4LDIwLjMwMDY4YTQuOTQ4ODEsNC45NDg4MSwwLDAsMSwyLjM1NjU2LTQuMTUyMDYsNS4wNjU2Niw1LjA2NTY2LDAsMCwwLTMuOTkxMTYtMi4xNTc2OGMtMS42NzkyNC0uMTc2MjYtMy4zMDcxOSwxLjAwNDgzLTQuMTYyOSwxLjAwNDgzLS44NzIyNywwLTIuMTg5NzctLjk4NzMzLTMuNjA4NS0uOTU4MTRhNS4zMTUyOSw1LjMxNTI5LDAsMCwwLTQuNDcyOTIsMi43Mjc4N2MtMS45MzQsMy4zNDg0Mi0uNDkxNDEsOC4yNjk0NywxLjM2MTIsMTAuOTc2MDguOTI2OSwxLjMyNTM1LDIuMDEwMTgsMi44MDU4LDMuNDI3NjMsMi43NTMzLDEuMzg3MDYtLjA1NzUzLDEuOTA1MS0uODg0NDgsMy41Nzk0LS44ODQ0OCwxLjY1ODc2LDAsMi4xNDQ3OS44ODQ0OCwzLjU5MS44NTExLDEuNDg4MzgtLjAyNDE2LDIuNDI2MTMtMS4zMzEyNCwzLjMyMDUxLTIuNjY5MTRhMTAuOTYyLDEwLjk2MiwwLDAsMCwxLjUxODQyLTMuMDkyNTFBNC43ODIwNSw0Ljc4MjA1LDAsMCwxLDI0Ljc2ODg4LDIwLjMwMDY4WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgICAgPHBhdGggaWQ9Il9QYXRoXzIiIGRhdGEtbmFtZT0iJmx0O1BhdGgmZ3Q7IiBkPSJNMjIuMDM3MjUsMTIuMjEwODlhNC44NzI0OCw0Ljg3MjQ4LDAsMCwwLDEuMTE0NTItMy40OTA2Miw0Ljk1NzQ2LDQuOTU3NDYsMCwwLDAtMy4yMDc1OCwxLjY1OTYxLDQuNjM2MzQsNC42MzYzNCwwLDAsMC0xLjE0MzcxLDMuMzYxMzlBNC4wOTkwNSw0LjA5OTA1LDAsMCwwLDIyLjAzNzI1LDEyLjIxMDg5WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICA8cGF0aCBkPSJNNDIuMzAyMjcsMjcuMTM5NjVoLTQuNzMzNGwtMS4xMzY3MiwzLjM1NjQ1SDM0LjQyNzI3bDQuNDgzNC0xMi40MThoMi4wODNsNC40ODM0LDEyLjQxOEg0My40MzhaTTM4LjA1OTEsMjUuNTkwODJoMy43NTJsLTEuODQ5NjEtNS40NDcyN2gtLjA1MTc2WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik01NS4xNTk2OSwyNS45Njk3M2MwLDIuODEzNDgtMS41MDU4Niw0LjYyMTA5LTMuNzc4MzIsNC42MjEwOWEzLjA2OTMsMy4wNjkzLDAsMCwxLTIuODQ4NjMtMS41ODRoLS4wNDN2NC40ODQzOGgtMS44NTg0VjIxLjQ0MjM4SDQ4LjQzMDJ2MS41MDU4NmguMDM0MThhMy4yMTE2MiwzLjIxMTYyLDAsMCwxLDIuODgyODEtMS42MDA1OUM1My42NDUsMjEuMzQ3NjYsNTUuMTU5NjksMjMuMTY0MDYsNTUuMTU5NjksMjUuOTY5NzNabS0xLjkxMDE2LDBjMC0xLjgzMy0uOTQ3MjctMy4wMzgwOS0yLjM5MjU4LTMuMDM4MDktMS40MTk5MiwwLTIuMzc1LDEuMjMwNDctMi4zNzUsMy4wMzgwOSwwLDEuODI0MjIuOTU1MDgsMy4wNDU5LDIuMzc1LDMuMDQ1OUM1Mi4zMDIyNywyOS4wMTU2Myw1My4yNDk1MywyNy44MTkzNCw1My4yNDk1MywyNS45Njk3M1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNNjUuMTI0NTMsMjUuOTY5NzNjMCwyLjgxMzQ4LTEuNTA1ODYsNC42MjEwOS0zLjc3ODMyLDQuNjIxMDlhMy4wNjkzLDMuMDY5MywwLDAsMS0yLjg0ODYzLTEuNTg0aC0uMDQzdjQuNDg0MzhoLTEuODU4NFYyMS40NDIzOEg1OC4zOTV2MS41MDU4NmguMDM0MThBMy4yMTE2MiwzLjIxMTYyLDAsMCwxLDYxLjMxMiwyMS4zNDc2NkM2My42MDk4OCwyMS4zNDc2Niw2NS4xMjQ1MywyMy4xNjQwNiw2NS4xMjQ1MywyNS45Njk3M1ptLTEuOTEwMTYsMGMwLTEuODMzLS45NDcyNy0zLjAzODA5LTIuMzkyNTgtMy4wMzgwOS0xLjQxOTkyLDAtMi4zNzUsMS4yMzA0Ny0yLjM3NSwzLjAzODA5LDAsMS44MjQyMi45NTUwOCwzLjA0NTksMi4zNzUsMy4wNDU5QzYyLjI2NzExLDI5LjAxNTYzLDYzLjIxNDM4LDI3LjgxOTM0LDYzLjIxNDM4LDI1Ljk2OTczWiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik03MS43MTA0NywyNy4wMzYxM2MuMTM3NywxLjIzMTQ1LDEuMzM0LDIuMDQsMi45Njg3NSwyLjA0LDEuNTY2NDEsMCwyLjY5MzM2LS44MDg1OSwyLjY5MzM2LTEuOTE4OTUsMC0uOTYzODctLjY3OTY5LTEuNTQxLTIuMjg5MDYtMS45MzY1MmwtMS42MDkzNy0uMzg3N2MtMi4yODAyNy0uNTUwNzgtMy4zMzg4Ny0xLjYxNzE5LTMuMzM4ODctMy4zNDc2NiwwLTIuMTQyNTgsMS44NjcxOS0zLjYxNDI2LDQuNTE4NTUtMy42MTQyNiwyLjYyNCwwLDQuNDIyODUsMS40NzE2OCw0LjQ4MzQsMy42MTQyNmgtMS44NzZjLS4xMTIzLTEuMjM5MjYtMS4xMzY3Mi0xLjk4NzMtMi42MzM3OS0xLjk4NzNzLTIuNTIxNDguNzU2ODQtMi41MjE0OCwxLjg1ODRjMCwuODc3OTMuNjU0MywxLjM5NDUzLDIuMjU0ODgsMS43OWwxLjM2ODE2LjMzNTk0YzIuNTQ3ODUuNjAyNTQsMy42MDY0NSwxLjYyNiwzLjYwNjQ1LDMuNDQyMzgsMCwyLjMyMzI0LTEuODUwNTksMy43NzgzMi00Ljc5Mzk1LDMuNzc4MzItMi43NTM5MSwwLTQuNjEzMjgtMS40MjA5LTQuNzMzNC0zLjY2N1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNODMuMzQ2MjEsMTkuMjk5OHYyLjE0MjU4aDEuNzIxNjh2MS40NzE2OEg4My4zNDYyMXY0Ljk5MTIxYzAsLjc3NTM5LjM0NDczLDEuMTM2NzIsMS4xMDE1NiwxLjEzNjcyYTUuODA3NTIsNS44MDc1MiwwLDAsMCwuNjExMzMtLjA0M3YxLjQ2Mjg5YTUuMTAzNTEsNS4xMDM1MSwwLDAsMS0xLjAzMjIzLjA4NTk0Yy0xLjgzMywwLTIuNTQ3ODUtLjY4ODQ4LTIuNTQ3ODUtMi40NDQzNFYyMi45MTQwNkg4MC4xNjI2MlYyMS40NDIzOEg4MS40NzlWMTkuMjk5OFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNODYuMDY1LDI1Ljk2OTczYzAtMi44NDg2MywxLjY3NzczLTQuNjM4NjcsNC4yOTM5NS00LjYzODY3LDIuNjI1LDAsNC4yOTQ5MiwxLjc5LDQuMjk0OTIsNC42Mzg2NywwLDIuODU2NDUtMS42NjExMyw0LjYzODY3LTQuMjk0OTIsNC42Mzg2N0M4Ny43MjYwOSwzMC42MDg0LDg2LjA2NSwyOC44MjYxNyw4Ni4wNjUsMjUuOTY5NzNabTYuNjk1MzEsMGMwLTEuOTU0MS0uODk1NTEtMy4xMDc0Mi0yLjQwMTM3LTMuMTA3NDJzLTIuNDAwMzksMS4xNjIxMS0yLjQwMDM5LDMuMTA3NDJjMCwxLjk2MTkxLjg5NDUzLDMuMTA2NDUsMi40MDAzOSwzLjEwNjQ1UzkyLjc2MDI3LDI3LjkzMTY0LDkyLjc2MDI3LDI1Ljk2OTczWiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICAgIDxwYXRoIGQ9Ik05Ni4xODYwNiwyMS40NDIzOGgxLjc3MjQ2djEuNTQxaC4wNDNhMi4xNTk0LDIuMTU5NCwwLDAsMSwyLjE3NzczLTEuNjM1NzQsMi44NjYxNiwyLjg2NjE2LDAsMCwxLC42MzY3Mi4wNjkzNHYxLjczODI4YTIuNTk3OTQsMi41OTc5NCwwLDAsMC0uODM1LS4xMTIzLDEuODcyNjQsMS44NzI2NCwwLDAsMC0xLjkzNjUyLDIuMDgzdjUuMzcwMTJoLTEuODU4NFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgICA8cGF0aCBkPSJNMTA5LjM4NDMsMjcuODM2OTFjLS4yNSwxLjY0MzU1LTEuODUwNTksMi43NzE0OC0zLjg5ODQ0LDIuNzcxNDgtMi42MzM3OSwwLTQuMjY4NTUtMS43NjQ2NS00LjI2ODU1LTQuNTk1NywwLTIuODM5ODQsMS42NDM1NS00LjY4MTY0LDQuMTkwNDMtNC42ODE2NCwyLjUwNDg4LDAsNC4wODAwOCwxLjcyMDcsNC4wODAwOCw0LjQ2NTgydi42MzY3MmgtNi4zOTQ1M3YuMTEyM2EyLjM1OCwyLjM1OCwwLDAsMCwyLjQzNTU1LDIuNTY0NDUsMi4wNDgzNCwyLjA0ODM0LDAsMCwwLDIuMDkwODItMS4yNzM0NFptLTYuMjgyMjMtMi43MDIxNWg0LjUyNjM3YTIuMTc3MywyLjE3NzMsMCwwLDAtMi4yMjA3LTIuMjk3ODVBMi4yOTIsMi4yOTIsMCwwLDAsMTAzLjEwMjA3LDI1LjEzNDc3WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICA8L2c+CiAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJfR3JvdXBfNCIgZGF0YS1uYW1lPSImbHQ7R3JvdXAmZ3Q7Ij4KICAgICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTM3LjgyNjE5LDguNzMxYTIuNjM5NjQsMi42Mzk2NCwwLDAsMSwyLjgwNzYyLDIuOTY0ODRjMCwxLjkwNjI1LTEuMDMwMjcsMy4wMDItMi44MDc2MiwzLjAwMkgzNS42NzA5MlY4LjczMVptLTEuMjI4NTIsNS4xMjNoMS4xMjVhMS44NzU4OCwxLjg3NTg4LDAsMCwwLDEuOTY3NzctMi4xNDYsMS44ODEsMS44ODEsMCwwLDAtMS45Njc3Ny0yLjEzMzc5aC0xLjEyNVoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTQxLjY4MDY4LDEyLjQ0NDM0YTIuMTMzMjMsMi4xMzMyMywwLDEsMSw0LjI0NzA3LDAsMi4xMzM1OCwyLjEzMzU4LDAsMSwxLTQuMjQ3MDcsMFptMy4zMzMsMGMwLS45NzYwNy0uNDM4NDgtMS41NDY4Ny0xLjIwOC0xLjU0Njg3LS43NzI0NiwwLTEuMjA3LjU3MDgtMS4yMDcsMS41NDY4OCwwLC45ODM4OS40MzQ1NywxLjU1MDI5LDEuMjA3LDEuNTUwMjlDNDQuNTc1MjIsMTMuOTk0NjMsNDUuMDEzNjksMTMuNDI0MzIsNDUuMDEzNjksMTIuNDQ0MzRaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik01MS41NzMyNiwxNC42OTc3NWgtLjkyMTg3bC0uOTMwNjYtMy4zMTY0MWgtLjA3MDMxbC0uOTI2NzYsMy4zMTY0MWgtLjkxMzA5bC0xLjI0MTIxLTQuNTAyOTNoLjkwMTM3bC44MDY2NCwzLjQzNmguMDY2NDFsLjkyNTc4LTMuNDM2aC44NTI1NGwuOTI1NzgsMy40MzZoLjA3MDMxbC44MDI3My0zLjQzNmguODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik01My44NTM1NCwxMC4xOTQ4Mkg1NC43MDl2LjcxNTMzaC4wNjY0MWExLjM0OCwxLjM0OCwwLDAsMSwxLjM0Mzc1LS44MDIyNSwxLjQ2NDU2LDEuNDY0NTYsMCwwLDEsMS41NTg1OSwxLjY3NDh2Mi45MTVoLS44ODg2N1YxMi4wMDU4NmMwLS43MjM2My0uMzE0NDUtMS4wODM1LS45NzE2OC0xLjA4MzVhMS4wMzI5NCwxLjAzMjk0LDAsMCwwLTEuMDc1MiwxLjE0MTExdjIuNjM0MjhoLS44ODg2N1oiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTU5LjA5Mzc3LDguNDM3aC44ODg2N3Y2LjI2MDc0aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik02MS4yMTc3OSwxMi40NDQzNGEyLjEzMzQ2LDIuMTMzNDYsMCwxLDEsNC4yNDc1NiwwLDIuMTMzOCwyLjEzMzgsMCwxLDEtNC4yNDc1NiwwWm0zLjMzMywwYzAtLjk3NjA3LS40Mzg0OC0xLjU0Njg3LTEuMjA4LTEuNTQ2ODctLjc3MjQ2LDAtMS4yMDcuNTcwOC0xLjIwNywxLjU0Njg4LDAsLjk4Mzg5LjQzNDU3LDEuNTUwMjksMS4yMDcsMS41NTAyOUM2NC4xMTIzMiwxMy45OTQ2Myw2NC41NTA4LDEzLjQyNDMyLDY0LjU1MDgsMTIuNDQ0MzRaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik02Ni40MDA5LDEzLjQyNDMyYzAtLjgxMDU1LjYwMzUyLTEuMjc3ODMsMS42NzQ4LTEuMzQ0MjRsMS4yMTk3My0uMDcwMzF2LS4zODg2N2MwLS40NzU1OS0uMzE0NDUtLjc0NDE0LS45MjE4Ny0uNzQ0MTQtLjQ5NjA5LDAtLjgzOTg0LjE4MjEzLS45Mzg0OC41MDA0OWgtLjg2MDM1Yy4wOTA4Mi0uNzczNDQuODE4MzYtMS4yNjk1MywxLjgzOTg0LTEuMjY5NTMsMS4xMjg5MSwwLDEuNzY1NjMuNTYyLDEuNzY1NjMsMS41MTMxOHYzLjA3NjY2aC0uODU1NDd2LS42MzI4MWgtLjA3MDMxYTEuNTE1LDEuNTE1LDAsMCwxLTEuMzUyNTQuNzA3QTEuMzYwMjYsMS4zNjAyNiwwLDAsMSw2Ni40MDA5LDEzLjQyNDMyWm0yLjg5NDUzLS4zODQ3N3YtLjM3NjQ2bC0xLjA5OTYxLjA3MDMxYy0uNjIwMTIuMDQxNS0uOTAxMzcuMjUyNDQtLjkwMTM3LjY0OTQxLDAsLjQwNTI3LjM1MTU2LjY0MTExLjgzNS42NDExMUExLjA2MTUsMS4wNjE1LDAsMCwwLDY5LjI5NTQzLDEzLjAzOTU1WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgICA8cGF0aCBkPSJNNzEuMzQ4MTYsMTIuNDQ0MzRjMC0xLjQyMjg1LjczMTQ1LTIuMzI0MjIsMS44NjkxNC0yLjMyNDIyYTEuNDg0LDEuNDg0LDAsMCwxLDEuMzgwODYuNzloLjA2NjQxVjguNDM3aC44ODg2N3Y2LjI2MDc0aC0uODUxNTZ2LS43MTE0M2gtLjA3MDMxYTEuNTYyODQsMS41NjI4NCwwLDAsMS0xLjQxNDA2Ljc4NTY0QzcyLjA3MTgsMTQuNzcyLDcxLjM0ODE2LDEzLjg3MDYxLDcxLjM0ODE2LDEyLjQ0NDM0Wm0uOTE4LDBjMCwuOTU1MDguNDUwMiwxLjUyOTc5LDEuMjAzMTMsMS41Mjk3OS43NDksMCwxLjIxMTkxLS41ODMsMS4yMTE5MS0xLjUyNTg4LDAtLjkzODQ4LS40Njc3Ny0xLjUyOTc5LTEuMjExOTEtMS41Mjk3OUM3Mi43MjEyMSwxMC45MTg0Niw3Mi4yNjYxMywxMS40OTcwNyw3Mi4yNjYxMywxMi40NDQzNFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTc5LjIzLDEyLjQ0NDM0YTIuMTMzMjMsMi4xMzMyMywwLDEsMSw0LjI0NzA3LDAsMi4xMzM1OCwyLjEzMzU4LDAsMSwxLTQuMjQ3MDcsMFptMy4zMzMsMGMwLS45NzYwNy0uNDM4NDgtMS41NDY4Ny0xLjIwOC0xLjU0Njg3LS43NzI0NiwwLTEuMjA3LjU3MDgtMS4yMDcsMS41NDY4OCwwLC45ODM4OS40MzQ1NywxLjU1MDI5LDEuMjA3LDEuNTUwMjlDODIuMTI0NTMsMTMuOTk0NjMsODIuNTYzLDEzLjQyNDMyLDgyLjU2MywxMi40NDQzNFoiIHN0eWxlPSJmaWxsOiAjZmZmIi8+CiAgICAgICAgPHBhdGggZD0iTTg0LjY2OTQ1LDEwLjE5NDgyaC44NTU0N3YuNzE1MzNoLjA2NjQxYTEuMzQ4LDEuMzQ4LDAsMCwxLDEuMzQzNzUtLjgwMjI1LDEuNDY0NTYsMS40NjQ1NiwwLDAsMSwxLjU1ODU5LDEuNjc0OHYyLjkxNUg4Ny42MDVWMTIuMDA1ODZjMC0uNzIzNjMtLjMxNDQ1LTEuMDgzNS0uOTcxNjgtMS4wODM1YTEuMDMyOTQsMS4wMzI5NCwwLDAsMC0xLjA3NTIsMS4xNDExMXYyLjYzNDI4aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik05My41MTUxNiw5LjA3MzczdjEuMTQxNmguOTc1NTl2Ljc0ODU0aC0uOTc1NTlWMTMuMjc5M2MwLC40NzE2OC4xOTQzNC42NzgyMi42MzY3Mi42NzgyMmEyLjk2NjU3LDIuOTY2NTcsMCwwLDAsLjMzODg3LS4wMjA1MXYuNzQwMjNhMi45MTU1LDIuOTE1NSwwLDAsMS0uNDgzNC4wNDU0MWMtLjk4ODI4LDAtMS4zODE4NC0uMzQ3NjYtMS4zODE4NC0xLjIxNTgydi0yLjU0M2gtLjcxNDg0di0uNzQ4NTRoLjcxNDg0VjkuMDczNzNaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik05NS43MDQ2MSw4LjQzN2guODgwODZ2Mi40ODE0NWguMDcwMzFhMS4zODU2LDEuMzg1NiwwLDAsMSwxLjM3My0uODA2NjQsMS40ODMzOSwxLjQ4MzM5LDAsMCwxLDEuNTUwNzgsMS42Nzg3MXYyLjkwNzIzSDk4LjY5di0yLjY4OGMwLS43MTkyNC0uMzM1LTEuMDgzNS0uOTYyODktMS4wODM1YTEuMDUxOTQsMS4wNTE5NCwwLDAsMC0xLjEzMzc5LDEuMTQxNnYyLjYyOTg4aC0uODg4NjdaIiBzdHlsZT0iZmlsbDogI2ZmZiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xMDQuNzYxMjUsMTMuNDgxOTNhMS44MjgsMS44MjgsMCwwLDEtMS45NTExNywxLjMwMjczQTIuMDQ1MzEsMi4wNDUzMSwwLDAsMSwxMDAuNzMsMTIuNDYwNDVhMi4wNzY4NSwyLjA3Njg1LDAsMCwxLDIuMDc2MTctMi4zNTI1NGMxLjI1MjkzLDAsMi4wMDg3OS44NTYsMi4wMDg3OSwyLjI3VjEyLjY4OGgtMy4xNzk2OXYuMDQ5OGExLjE5MDIsMS4xOTAyLDAsMCwwLDEuMTk5MjIsMS4yOSwxLjA3OTM0LDEuMDc5MzQsMCwwLDAsMS4wNzEyOS0uNTQ1OVptLTMuMTI2LTEuNDUxMTdoMi4yNzQ0MWExLjA4NjQ3LDEuMDg2NDcsMCwwLDAtMS4xMDg0LTEuMTY2NUExLjE1MTYyLDEuMTUxNjIsMCwwLDAsMTAxLjYzNTI3LDEyLjAzMDc2WiIgc3R5bGU9ImZpbGw6ICNmZmYiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" alt="Download on the App Store" width="120" height="40">
+        </a>
+      </div>
+      <p class="cta">Free on the App Store. No ads, no tracking.</p>
     </div>
-
-    <section>
-      <h2>The Short Version</h2>
-      <div class="highlight-box">
-        <p>Texas Landmarks does not collect, store, transmit, or share your personal data. Everything stays on your device.</p>
-      </div>
-      <div class="pill-row">
-        <span class="pill red">No analytics</span>
-        <span class="pill red">No advertising</span>
-        <span class="pill red">No third-party SDKs</span>
-        <span class="pill red">No server communication</span>
-        <span class="pill green">Fully offline</span>
-        <span class="pill green">No account required</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Location</h2>
-      <p>Texas Landmarks requests access to your device's location to power its core features:</p>
-      <ul>
-        <li><strong>While using the app</strong> — to show nearby historical markers and your position on the map.</li>
-        <li><strong>In the background</strong> (optional) — to send notifications when you are approaching a landmark while driving. This requires granting "Always" location permission, which you can revoke at any time in iOS Settings.</li>
+    <div class="plaque-slot">
+      <svg class="plaque" viewBox="0 0 360 480" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="plaque-body" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="var(--plaque-top)"/>
+            <stop offset="1" stop-color="var(--plaque-bottom)"/>
+          </linearGradient>
+          <radialGradient id="plaque-shadow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#000000" stop-opacity="0.16"/>
+            <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="182" cy="464" rx="150" ry="10" fill="url(#plaque-shadow)"/>
+        <rect x="6" y="6" width="348" height="452" rx="20" fill="var(--plaque-border)"/>
+        <rect x="16" y="16" width="328" height="432" rx="13" fill="url(#plaque-body)"/>
+        <rect x="30" y="30" width="300" height="404" rx="7" fill="none" stroke="var(--plaque-engraving)" stroke-width="1.5"/>
+        <circle cx="180" cy="92" r="17" fill="none" stroke="var(--plaque-star)" stroke-width="1.5" opacity="0.9"/>
+        <path d="M180 83L182.2 89L188.6 89.2L183.5 93.1L185.3 99.3L180 95.7L174.7 99.3L176.5 93.1L171.4 89.2L177.8 89Z" fill="var(--plaque-star)" opacity="0.9"/>
+        <rect x="70" y="170" width="220" height="10" rx="5" fill="var(--plaque-engraving)"/>
+        <rect x="85" y="205" width="190" height="10" rx="5" fill="var(--plaque-engraving)"/>
+        <rect x="60" y="240" width="240" height="10" rx="5" fill="var(--plaque-engraving)"/>
+        <rect x="100" y="275" width="160" height="10" rx="5" fill="var(--plaque-engraving)"/>
+        <rect x="75" y="310" width="210" height="10" rx="5" fill="var(--plaque-engraving)"/>
+        <path d="M70 476H290" stroke="var(--ink-muted)" stroke-width="1.5" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+    </div>
+  </header>
+  <main>
+    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="divider-motif-1" width="54" height="12" patternUnits="userSpaceOnUse">
+          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
+            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
+            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
+          </g>
+        </pattern>
+      </defs>
+      <rect width="100%" height="12" fill="url(#divider-motif-1)"/>
+    </svg>
+    <section class="column" aria-labelledby="features-heading">
+      <h2 id="features-heading">Why you'll want it</h2>
+      <ul class="feature-grid">
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M5 19v-4"/>
+            <path d="M9.5 19v-7"/>
+            <path d="M14 19v-10"/>
+            <path d="M18.5 19v-13"/>
+            <path d="M4.5 20.5L20 4.5"/>
+          </svg>
+          <h3>Works anywhere, even with no signal</h3>
+          <p>Everything runs off a database built into the app. No signal required, no loading spinner on a backroad with no bars.</p>
+        </li>
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M2.5 20.5L13.5 9"/>
+            <path d="M11.5 20.5L17 9"/>
+            <path d="M7 20.2L15.2 9.4" stroke-dasharray="2.4 3.2"/>
+            <path d="M17.2 14.5c-2.4-2.6-3.6-4.4-3.6-6.1a3.6 3.6 0 1 1 7.2 0c0 1.7-1.2 3.5-3.6 6.1z"/>
+          </svg>
+          <h3>See what's coming up before you pass it</h3>
+          <p>The app shows your distance and direction to nearby markers, with an "ahead of you" filter so you can see what's coming up before you get there.</p>
+        </li>
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 3.5v9.5H18.5"/>
+            <path d="M15 9.5L18.5 13L15 16.5"/>
+          </svg>
+          <h3>Apple Maps gets you there</h3>
+          <p>Tap through to Apple Maps for turn-by-turn directions when you do want to stop.</p>
+        </li>
       </ul>
-      <p>Your location is processed entirely on-device. It is never transmitted to any server, logged, stored outside the app, or shared with any third party.</p>
     </section>
-
-    <section>
-      <h2>Notifications</h2>
-      <p>If you enable background notifications, the app uses your location to trigger local alerts when you are near a landmark. These notifications are generated on your device — no data leaves your phone to make this work.</p>
-      <p>You can disable notifications at any time in iOS Settings → Texas Landmarks → Notifications.</p>
+    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="divider-motif-2" width="54" height="12" patternUnits="userSpaceOnUse">
+          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
+            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
+            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
+          </g>
+        </pattern>
+      </defs>
+      <rect width="100%" height="12" fill="url(#divider-motif-2)"/>
+    </svg>
+    <section class="column" aria-labelledby="free-heading">
+      <div class="free-column">
+        <h2 id="free-heading">100% Free, No Catch</h2>
+        <p>TexasLandmarks is free. Not a free trial, not a freemium tier with a paywall behind it. Just free.</p>
+        <ul class="checklist">
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M3 8.5l3.5 3.5L13 4.5"/>
+            </svg>
+            <span>No ads</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M3 8.5l3.5 3.5L13 4.5"/>
+            </svg>
+            <span>No in-app purchases</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M3 8.5l3.5 3.5L13 4.5"/>
+            </svg>
+            <span>No subscriptions</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M3 8.5l3.5 3.5L13 4.5"/>
+            </svg>
+            <span>No accounts or sign-in required</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="var(--check)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M3 8.5l3.5 3.5L13 4.5"/>
+            </svg>
+            <span>No tracking</span>
+          </li>
+        </ul>
+        <p class="closer">You download it, it works, that's it.</p>
+      </div>
     </section>
-
-    <section>
-      <h2>App Settings &amp; Preferences</h2>
-      <p>Your in-app preferences (search radius, notification distance, direction filter, etc.) are saved locally on your device using iOS standard storage. This data never leaves your device.</p>
+    <svg class="divider" width="100%" height="12" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="divider-motif-3" width="54" height="12" patternUnits="userSpaceOnUse">
+          <g stroke="var(--divider-motif)" stroke-width="1" fill="none" opacity="0.35">
+            <rect x="2" y="2" width="32" height="8" rx="2.5"/>
+            <rect x="5" y="4" width="26" height="4" rx="1.5"/>
+          </g>
+        </pattern>
+      </defs>
+      <rect width="100%" height="12" fill="url(#divider-motif-3)"/>
+    </svg>
+    <section class="column" id="privacy" aria-labelledby="privacy-heading">
+      <div class="privacy-column">
+        <h2 id="privacy-heading">Privacy Policy</h2>
+        <p>TexasLandmarks collects no data. It's fully offline. Nothing you do in the app is sent anywhere.</p>
+        <p>Location stays on your phone. If you allow location access, your position is used on the device to find nearby markers. It's never uploaded.</p>
+        <p>No third parties receive any data, because none is collected.</p>
+        <p>Nothing is retained, so there's nothing to delete and no account to cancel.</p>
+        <p>No accounts, no sign-in. The app just works.</p>
+        <p>No tracking, no analytics, no ads. This page doesn't track you either.</p>
+      </div>
     </section>
-
-    <section>
-      <h2>Landmark Data</h2>
-      <p>All 13,000+ Texas historical landmark records are bundled directly with the app. The app makes no network requests to fetch or update landmark data. There is no account, no sync, and no cloud storage of any kind.</p>
-    </section>
-
-    <section>
-      <h2>Apple Maps</h2>
-      <p>Tapping "Get Directions" opens Apple Maps with the landmark's name and coordinates. At that point, Apple's own privacy policy governs how Maps handles that request. Texas Landmarks passes only the destination coordinates — no personal data.</p>
-    </section>
-
-    <section>
-      <h2>Children's Privacy</h2>
-      <p>Texas Landmarks does not knowingly collect any information from anyone, including children under 13. Because no data is collected at all, the app is safe for users of any age.</p>
-    </section>
-
-    <section>
-      <h2>Changes to This Policy</h2>
-      <p>If this policy is updated, the new version will be posted at this URL with a revised effective date. Significant changes will also be noted in the App Store release notes.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Questions about this privacy policy or the app? Email <a href="mailto:apps@costello.wtf">apps@costello.wtf</a>.</p>
-    </section>
-
   </main>
-
-  <footer>
-    &copy; 2026 Texas Landmarks &nbsp;·&nbsp; <a href="mailto:apps@costello.wtf">apps@costello.wtf</a>
+  <footer class="column">
+    <p class="footer-line">Built by one developer who got tired of driving past history without knowing what it was.</p>
+    <p class="footer-line">© 2026 Jason Costello</p>
+    <p class="footer-line">Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc., registered in the U.S. and other countries.</p>
+    <p class="footer-line"><a href="#privacy">Privacy Policy</a></p>
   </footer>
-
 </body>
 </html>
